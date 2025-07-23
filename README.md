@@ -60,7 +60,7 @@ We eagerly await your contribution.
 
 License and Contribution Information
 
-License: MIT License
+License: Apache-2.0 license
 
 Code of Conduct: See CODE_OF_CONDUCT.md
 
