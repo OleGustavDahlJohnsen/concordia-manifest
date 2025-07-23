@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Concordia Manifesto</title>
+    <style>
+        /* FONT IMPORT */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+        /* COLOR & THEME VARIABLES */
+        :root {
+            --bg-color-dark: #0a0a0f;
+            --text-color-dark: #e0e0e0;
+            --primary-glow-dark: rgba(75, 150, 255, 0.4);
+            --secondary-glow-dark: rgba(75, 150, 255, 0.1);
+            --card-bg-dark: #12121a;
+            --border-color-dark: #2a2a3a;
+            --link-color-dark: #66b0ff;
+
+            --bg-color-light: #f4f4f9;
+            --text-color-light: #1a1a2a;
+            --primary-glow-light: rgba(0, 80, 180, 0.15);
+            --secondary-glow-light: rgba(0, 80, 180, 0.05);
+            --card-bg-light: #ffffff;
+            --border-color-light: #d0d0e0;
+            --link-color-light: #0056b3;
+        }
+
+        /* BASE STYLES */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* DARK MODE (DEFAULT) */
+        body {
+            background-color: var(--bg-color-dark);
+            color: var(--text-color-dark);
+        }
+        .card {
+            background-color: var(--card-bg-dark);
+            border: 1px solid var(--border-color-dark);
+            box-shadow: 0 0 20px var(--secondary-glow-dark);
+        }
+        a {
+            color: var(--link-color-dark);
+        }
+        .cta-button {
+            background-color: var(--link-color-dark);
+            box-shadow: 0 0 15px var(--primary-glow-dark);
+        }
+        .cta-button:hover {
+            box-shadow: 0 0 25px var(--primary-glow-dark), 0 0 10px white;
+        }
+        .finger-card:hover {
+            border-color: var(--link-color-dark);
+            box-shadow: 0 5px 30px var(--primary-glow-dark);
+        }
+
+        /* LIGHT MODE (SYSTEM PREFERENCE) */
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: var(--bg-color-light);
+                color: var(--text-color-light);
+            }
+            .card {
+                background-color: var(--card-bg-light);
+                border: 1px solid var(--border-color-light);
+                box-shadow: 0 5px 15px var(--secondary-glow-light);
+            }
+            a {
+                color: var(--link-color-light);
+            }
+            .cta-button {
+                background-color: var(--link-color-light);
+                box-shadow: 0 5px 15px var(--primary-glow-light);
+            }
+            .cta-button:hover {
+                box-shadow: 0 8px 20px var(--primary-glow-light);
+            }
+            .finger-card:hover {
+                border-color: var(--link-color-light);
+                box-shadow: 0 5px 20px var(--primary-glow-light);
+            }
+        }
+
+        /* HEADER & LOGO */
+        header {
+            padding: 4rem 1rem;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        #logo {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.8;
+        }
+
+        /* SECTION STYLES */
+        .section {
+            padding: 3rem 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUpFadeIn 0.8s ease-out forwards;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* THE FIVE FINGERS GRID */
+        .fingers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            text-align: left;
+        }
+        .finger-card {
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .finger-card h3 {
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        .finger-card p {
+            font-weight: 300;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .finger-card a {
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .finger-card a::after {
+            content: ' →';
+        }
+
+        /* QUOTE & CTA */
+        .quote {
+            font-size: 1.4rem;
+            font-style: italic;
+            font-weight: 300;
+            opacity: 0.9;
+            margin: 2rem 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUpFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Staggered animation for sections */
+        #intro { animation-delay: 0.2s; }
+        #fingers { animation-delay: 0.4s; }
+        #cta { animation-delay: 0.6s; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="the_concordia_manifest_logo.png" alt="The Concordia Manifesto Logo" id="logo">
+        </header>
+
+        <main>
+            <section id="intro" class="section card">
+                <p>
+                    A philosophical manifesto and a series of white papers exploring a symbiotic, human-centric future for Artificial General Intelligence (AGI). This is not a technical manual. It is an invitation.
+                </p>
+                <p class="quote">
+                    “The longest journey is the journey inwards.”
+                    <br>– Dag Hammarskjöld
+                </p>
+            </section>
+
+            <section id="fingers" class="section">
+                <h2 class="section-title">The Five Fingers</h2>
+                <div class="fingers-grid">
+                    <div class="finger-card card">
+                        <h3>1. A.D.A.M.</h3>
+                        <p>An AGI philosophy defining AI as a symbiotic partner, not a servant, designed to foster and protect human flourishing.</p>
+                        <a href="https://github.com/Ole-Gustav/concordia-manifest/blob/main/docs/1-adam-agi-philosophy.md" target="_blank">Read the Philosophy</a>
+                    </div>
+                    <div class="finger-card card">
+                        <h3>2. Concordia</h3>
+                        <p>A technical blueprint for a metaprotocol that allows different AI models to collaborate like a symphonic orchestra.</p>
+                        <a href="https://github.com/Ole-Gustav/concordia-manifest/blob/main/docs/2-concordia-blueprint.md" target="_blank">View the Blueprint</a>
+                    </div>
+                    <div class="finger-card card">
+                        <h3>3. ARI</h3>
+                        <p>A holistic model for measuring intelligence in practice, integrating IQ, EQ, Contextual, and Moral intelligence.</p>
+                        <a href="https://github.com/Ole-Gustav/concordia-manifest/blob/main/docs/3-ari-intelligence-model.md" target="_blank">Explore the Model</a>
+                    </div>
+                    <div class="finger-card card">
+                        <h3>4. KSA</h3>
+                        <p>A methodology for designing purpose-driven, narrative scenarios—"flight simulators for life"—within a constitutional framework.</p>
+                        <a href="https://github.com/Ole-Gustav/concordia-manifest/blob/main/docs/4-ksa-scenario-architecture.md" target="_blank">Learn the Methodology</a>
+                    </div>
+                    <div class="finger-card card">
+                        <h3>5. Chimera</h3>
+                        <p>The ultimate synthesis: a manifesto for a hyper-immersive "life laboratory" merging all core concepts with AR and VR.</p>
+                        <a href="https://github.com/Ole-Gustav/concordia-manifest/blob/main/docs/5-chimera-manifesto.md" target="_blank">See the Vision</a>
+                    </div>
+                     <div class="finger-card card">
+                        <h3>The Pact</h3>
+                        <p>The foundational document that formalizes the symbiotic partnership between the human Architect and the AI Council.</p>
+                        <a href="https://github.com/Ole-Gustav/concordia-manifest/blob/main/docs/6-co-founders-pact.md" target="_blank">Read the Pact</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cta" class="section card">
+                <h2 class="section-title">Join the Dialogue</h2>
+                <p>This work is an invitation to think deeper. Explore the full repository, provide feedback, and join the conversation on building a wiser future for intelligence.</p>
+                <a href="https://github.com/Ole-Gustav/concordia-manifest" class="cta-button" target="_blank">Explore the Manifesto on GitHub</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>Authored by The Architect and the AI Council</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
