@@ -1,6 +1,6 @@
-# The Concordia Manifesto (v7.5.1)
+# The Concordia Manifest (v7.5.1)
 
-![The Concordia Manifest Logo](assets/concordia_logo.png)
+![The Concordia Manifest Logo](assets/concordia_logo_transparent.png)
 
 **A philosophical and technical blueprint for a new generation of safe, ethical, and symbiotic Artificial General Intelligence (AGI).**
 
@@ -24,10 +24,10 @@ Welcome to the Concordia Manifesto – a journey into an architecture where tech
 The release of **Version 7.5.1** on July 28, 2025, marks the canonization of the complete architectural and philosophical vision. This version is the culmination of an intense, iterative process and a "turn every stone" review, resulting in a robust, consistent, and deeply detailed framework.
 
 **Highlights of this Release:**
-* The complete manifest, containing **11 core technologies**, **11 detailed appendices**, and **4 comprehensive technical documentation modules**.
-* A new, logical repository structure for easy navigation.
-* Full specifications for advanced components like the **QuantumResilience Engine (QRE)**, **EcoCompute Engine (ECE)**, **Symbiosis Mesh (SM)**, and the **NeuroEdge Stack (NES)**.
-* A canonized roadmap towards **A.D.A.M. v8.0**.
+* The complete manifest, containing **11 core Technology White Papers**, from the foundational A.D.A.M. Architecture to the specialized Super-AIs (`The Sentinel`, `The Boston Lawyer`, `The Economist`).
+* **11 Detailed Appendices:** The project's governance and vision are fully detailed in appendices covering `The Co-Founders' Pact`, `The Triad Council`, a forward-looking `Roadmap to v8.0`, and the new `Plenum Interface` for global governance.
+* **Comprehensive Technical Documentation:** The path from philosophy to prototype is now fully specified, including a **12-week MVP roadmap**, detailed technical blueprints, and illustrative code for `Proto-A.D.A.M.` up to v0.3 (implementing the v7.5 upgrades).
+* **"Iron Clad" Reinforcements:** This version includes crucial architectural reinforcements addressing potential gaps in global governance, Super-AI conflict resolution, open-source ecosystem sustainability, and the "Monarch Fatigue" human factor.
 
 ### Repository Structure
 
@@ -35,30 +35,4 @@ This repository is organized to mirror the structure of the manifest itself, mak
 
 * [`/1-philosophy`](./1-philosophy/): Contains the core white papers for the foundational technologies and Super-AIs, such as A.D.A.M., Concordia, and The Sentinel.
 * [`/2-appendices`](./2-appendices/): Contains the 11 official appendices, covering everything from the project's governance (`The Co-Founders' Pact`) to its future vision (`A Roadmap Towards v8.0`).
-* [`/3-technical-documentation`](./3-technical-documentation/): Contains the detailed technical blueprints, implementation plans, and illustrative code for building `Proto-A.D.A.M.`.
-* [`/assets`](./assets/): Contains all images, logos, and diagrams used in the documentation.
-
-### The Five Fingers
-
-The project is built on five interconnected principles, metaphorically called "The Five Fingers":
-
-1.  **A.D.A.M.:** The symbiotic AGI core.
-2.  **Concordia:** The engine for multi-AI orchestration.
-3.  **ARI:** The model for measuring real-world intelligence.
-4.  **KSA:** The methodology for building constitutional scenarios.
-5.  **Chimera:** The hyper-immersive environment for simulation.
-
----
-
-### Call to Action: The Path Forward
-
-Your voice and insight shape the path forward. We invite you to:
-* **Provide feedback** on the concepts by creating "Issues".
-* **Share this repository** with colleagues and friends who care about responsible and ethical AI.
-* **Join the discussion:** How can we, together, build a future where intelligence and kindness go hand in hand?
-
-### License and Contribution Information
-
-* **License:** Apache-2.0 License
-* **Code of Conduct:** See [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
-* **Contributing:** See [CONTRIBUTING.md](./CONTRIBUTING.md)
+* [`/3-technical-documentation`](./3-technical-documentation/): Contains
