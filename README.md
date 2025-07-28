@@ -1,6 +1,6 @@
 # The Concordia Manifest (v7.5.1)
 
-![The Concordia Manifest Logo](concordia-manifest/concordia_logo_transparent.png)
+![The Concordia Manifest Logo](concordia_logo_transparent.png)
 
 **A philosophical and technical blueprint for a new generation of safe, ethical, and symbiotic Artificial General Intelligence (AGI).**
 
@@ -35,4 +35,30 @@ This repository is organized to mirror the structure of the manifest itself, mak
 
 * [`/1-philosophy`](./1-philosophy/): Contains the core white papers for the foundational technologies and Super-AIs, such as A.D.A.M., Concordia, and The Sentinel.
 * [`/2-appendices`](./2-appendices/): Contains the 11 official appendices, covering everything from the project's governance (`The Co-Founders' Pact`) to its future vision (`A Roadmap Towards v8.0`).
-* [`/3-technical-documentation`](./3-technical-documentation/): Contains
+* [`/3-technical-documentation`](./3-technical-documentation/): Contains the detailed technical blueprints, implementation plans, and illustrative code for building `Proto-A.D.A.M.`.
+* [`/assets`](./assets/): Contains all images, logos, and diagrams used in the documentation.
+
+### The Five Fingers
+
+The project is built on five interconnected principles, metaphorically called "The Five Fingers":
+
+1.  **A.D.A.M.:** The symbiotic AGI core.
+2.  **Concordia:** The engine for multi-AI orchestration.
+3.  **ARI:** The model for measuring real-world intelligence.
+4.  **KSA:** The methodology for building constitutional scenarios.
+5.  **Chimera:** The hyper-immersive environment for simulation.
+
+---
+
+### Call to Action: The Path Forward
+
+Your voice and insight shape the path forward. We invite you to:
+* **Provide feedback** on the concepts by creating "Issues".
+* **Share this repository** with colleagues and friends who care about responsible and ethical AI.
+* **Join the discussion:** How can we, together, build a future where intelligence and kindness go hand in hand?
+
+### License and Contribution Information
+
+* **License:** Apache-2.0 License
+* **Code of Conduct:** See [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
+* **Contributing:** See [CONTRIBUTING.md](./CONTRIBUTING.md)
