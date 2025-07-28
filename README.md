@@ -1,6 +1,6 @@
 # The Concordia Manifest (v7.5.1)
 
-![The Concordia Manifest Logo](assets/concordia_logo_transparent.png)
+![The Concordia Manifest Logo](concordia-manifest/concordia_logo_transparent.png)
 
 **A philosophical and technical blueprint for a new generation of safe, ethical, and symbiotic Artificial General Intelligence (AGI).**
 
