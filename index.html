@@ -1,293 +1,573 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-g">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Concordia Manifesto</title>
+    <title>The Concordia Manifest v7.5.1</title>
+    <link rel="icon" href="concordia_logo.ico" type="image/x-icon">
     <style>
-        /* FONT IMPORT */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
-
-        /* COLOR & THEME VARIABLES */
         :root {
-            --bg-color-dark: #0a0a0f;
-            --text-color-dark: #e0e0e0;
-            --primary-glow-dark: rgba(75, 150, 255, 0.4);
-            --secondary-glow-dark: rgba(75, 150, 255, 0.1);
-            --card-bg-dark: #12121a;
-            --border-color-dark: #2a2a3a;
-            --link-color-dark: #66b0ff;
-
-            --bg-color-light: #f4f4f9;
-            --text-color-light: #1a1a2a;
-            --primary-glow-light: rgba(0, 80, 180, 0.15);
-            --secondary-glow-light: rgba(0, 80, 180, 0.05);
+            --bg-light: #f7f9fc;
+            --text-light: #202124;
             --card-bg-light: #ffffff;
-            --border-color-light: #d0d0e0;
-            --link-color-light: #0056b3;
+            --border-light: #e0e0e0;
+            --accent-light: #1a73e8;
+            --header-bg-light: rgba(255, 255, 255, 0.85);
+
+            --bg-dark: #202124;
+            --text-dark: #e8eaed;
+            --card-bg-dark: #2d2e30;
+            --border-dark: #4d4e50;
+            --accent-dark: #8ab4f8;
+            --header-bg-dark: rgba(32, 33, 36, 0.85);
+            
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        /* BASE STYLES */
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .light-theme {
+            background-color: var(--bg-light);
+            color: var(--text-light);
+        }
+
+        .dark-theme {
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
         }
 
-        /* DARK MODE (DEFAULT) */
-        body {
-            background-color: var(--bg-color-dark);
-            color: var(--text-color-dark);
-        }
-        .card {
-            background-color: var(--card-bg-dark);
-            border: 1px solid var(--border-color-dark);
-            box-shadow: 0 0 20px var(--secondary-glow-dark);
-        }
-        a {
-            color: var(--link-color-dark);
-        }
-        .cta-button {
-            background-color: var(--link-color-dark);
-            box-shadow: 0 0 15px var(--primary-glow-dark);
-        }
-        .cta-button:hover {
-            box-shadow: 0 0 25px var(--primary-glow-dark), 0 0 10px white;
-        }
-        .finger-card:hover {
-            border-color: var(--link-color-dark);
-            box-shadow: 0 5px 30px var(--primary-glow-dark);
-        }
-
-        /* LIGHT MODE (SYSTEM PREFERENCE) */
-        @media (prefers-color-scheme: light) {
-            body {
-                background-color: var(--bg-color-light);
-                color: var(--text-color-light);
-            }
-            .card {
-                background-color: var(--card-bg-light);
-                border: 1px solid var(--border-color-light);
-                box-shadow: 0 5px 15px var(--secondary-glow-light);
-            }
-            a {
-                color: var(--link-color-light);
-            }
-            .cta-button {
-                background-color: var(--link-color-light);
-                box-shadow: 0 5px 15px var(--primary-glow-light);
-            }
-            .cta-button:hover {
-                box-shadow: 0 8px 20px var(--primary-glow-light);
-            }
-            .finger-card:hover {
-                border-color: var(--link-color-light);
-                box-shadow: 0 5px 20px var(--primary-glow-light);
-            }
-        }
-
-        /* HEADER & LOGO */
         header {
-            padding: 4rem 1rem;
-            animation: fadeIn 1.5s ease-in-out;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid;
         }
-        #logo {
-            max-width: 250px;
-            height: auto;
+        
+        .light-theme header { background-color: var(--header-bg-light); border-color: var(--border-light); }
+        .dark-theme header { background-color: var(--header-bg-dark); border-color: var(--border-dark); }
+
+        .title-version h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .title-version span {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            font-weight: 500;
+            margin-left: 8px;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .light-theme .title-version span { background-color: #e8f0fe; color: var(--accent-light); }
+        .dark-theme .title-version span { background-color: #3c4043; color: var(--accent-dark); }
+
+        .theme-switch-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        .theme-switch {
+            display: inline-block;
+            height: 24px;
+            position: relative;
+            width: 48px;
+        }
+        .theme-switch input {
+            display:none;
+        }
+        .slider {
+            background-color: #ccc;
+            bottom: 0;
+            cursor: pointer;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: .4s;
+            border-radius: 24px;
+        }
+        .slider:before {
+            background-color: #fff;
+            bottom: 4px;
+            content: "";
+            height: 16px;
+            left: 4px;
+            position: absolute;
+            transition: .4s;
+            width: 16px;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: var(--accent-light);
+        }
+        .dark-theme input:checked + .slider {
+            background-color: var(--accent-dark);
+        }
+        input:checked + .slider:before {
+            transform: translateX(24px);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            border-bottom: 1px solid;
+        }
+        .light-theme .hero { border-color: var(--border-light); }
+        .dark-theme .hero { border-color: var(--border-dark); }
+
+        .hero h2 {
+            font-size: 2.5rem;
             margin-bottom: 1rem;
         }
-        
-        /* SECTION STYLES */
-        .section {
-            padding: 3rem 1.5rem;
-            margin-bottom: 2rem;
-            border-radius: 12px;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: slideUpFadeIn 0.8s ease-out forwards;
-        }
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-
-        /* THE CORE CONCEPTS GRID */
-        .fingers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            text-align: left;
-        }
-        .finger-card {
-            padding: 1.5rem;
-            border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-        }
-        .finger-card h3 {
-            margin-top: 0;
-            font-size: 1.3rem;
-        }
-        .finger-card p {
-            font-weight: 300;
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-        .finger-card a {
-            text-decoration: none;
-            font-weight: 700;
-        }
-        .finger-card a::after {
-            content: ' →';
-        }
-
-        /* QUOTE & CTA */
-        .quote {
-            font-size: 1.4rem;
-            font-style: italic;
-            font-weight: 300;
-            opacity: 0.9;
-            margin: 2rem 0;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            border: none;
-            border-radius: 50px;
-            color: white;
+        .hero p {
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
             font-size: 1.1rem;
-            font-weight: 700;
+            line-height: 1.6;
+            opacity: 0.8;
+        }
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 24px;
             text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
         }
-        .cta-button:hover {
-            transform: translateY(-3px);
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
+        .btn-primary {
+            color: #fff;
+        }
+        .light-theme .btn-primary { background-color: var(--accent-light); }
+        .dark-theme .btn-primary { background-color: var(--accent-dark); color: var(--bg-dark); }
 
-        /* FOOTER */
-        footer {
-            padding: 2rem;
-            font-size: 0.9rem;
-            opacity: 0.6;
+        .btn-secondary {
+            border: 1px solid;
         }
+        .light-theme .btn-secondary { border-color: var(--accent-light); color: var(--accent-light); }
+        .dark-theme .btn-secondary { border-color: var(--accent-dark); color: var(--accent-dark); }
 
-        /* ANIMATIONS */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        .search-container {
+            margin: 3rem 0;
+            display: flex;
+            justify-content: center;
         }
-        @keyframes slideUpFadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        #searchInput {
+            width: 50%;
+            max-width: 600px;
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: 1px solid;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        .light-theme #searchInput {
+            border-color: var(--border-light);
+            background-color: var(--card-bg-light);
+            color: var(--text-light);
+        }
+        .dark-theme #searchInput {
+            border-color: var(--border-dark);
+            background-color: var(--card-bg-dark);
+            color: var(--text-dark);
+        }
+        #searchInput:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--accent-light-transparent, rgba(26, 115, 232, 0.3));
+        }
+        .dark-theme #searchInput:focus {
+            box-shadow: 0 0 0 3px var(--accent-dark-transparent, rgba(138, 180, 248, 0.3));
         }
         
-        /* Staggered animation for sections */
-        #intro { animation-delay: 0.2s; }
-        #release { animation-delay: 0.4s; }
-        #fingers { animation-delay: 0.6s; }
-        #cta { animation-delay: 0.8s; }
+        .docs-section {
+            margin-bottom: 4rem;
+        }
+        .docs-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid;
+            text-align: center;
+        }
+        .light-theme .docs-section h3 { border-color: var(--accent-light); }
+        .dark-theme .docs-section h3 { border-color: var(--accent-dark); }
+
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .doc-card {
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid;
+        }
+        .light-theme .doc-card {
+            background-color: var(--card-bg-light);
+            border-color: var(--border-light);
+            box-shadow: var(--shadow);
+        }
+        .dark-theme .doc-card {
+            background-color: var(--card-bg-dark);
+            border-color: var(--border-dark);
+        }
+        .doc-card:hover {
+            transform: translateY(-5px);
+        }
+        .light-theme .doc-card:hover { box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        .dark-theme .doc-card:hover { border-color: var(--accent-dark); }
+        
+        .doc-card h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+        .light-theme .doc-card h4 { color: var(--accent-light); }
+        .dark-theme .doc-card h4 { color: var(--accent-dark); }
+        
+        .doc-card p {
+            margin: 0;
+            font-size: 0.9rem;
+            flex-grow: 1;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+        
+        .system-map-container {
+            text-align: center;
+            margin: 4rem 0;
+        }
+        .system-map-container h3 {
+             font-size: 1.8rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid;
+        }
+        .light-theme .system-map-container h3 { border-color: var(--accent-light); }
+        .dark-theme .system-map-container h3 { border-color: var(--accent-dark); }
+
+        .system-map-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        .light-theme footer { border-color: var(--border-light); }
+        .dark-theme footer { border-color: var(--border-dark); }
 
     </style>
 </head>
 <body>
 
+    <header>
+        <div class="title-version">
+            <h1>The Concordia Manifest</h1>
+            <span>v7.5.1</span>
+        </div>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider"></div>
+            </label>
+        </div>
+    </header>
+
     <div class="container">
+        <section class="hero">
+            <h2>An "Iron Clad" Blueprint for Symbiotic AGI</h2>
+            <p>
+                Welcome to the canonized v7.5.1 of The Concordia Manifest. This is the culmination of a unique symbiotic process between human vision and an AI Council, resulting in a complete philosophical and technical architecture for A.D.A.M.—an AGI designed as a partner for human flourishing. This is not a final answer, but an invitation to co-create.
+            </p>
+            <div class="hero-buttons">
+                <a href="the_concordia_manifest_v7_5_1.pdf" class="btn btn-primary" target="_blank">Read the Full Manifest (PDF)</a>
+                <a href="https://github.com/olegustavdahljohnsen/concordia-manifest/archive/refs/heads/main.zip" class="btn btn-secondary">Download Repository (.ZIP)</a>
+            </div>
+        </section>
+        
+        <section class="search-container">
+            <input type="text" id="searchInput" placeholder="Search documents...">
+        </section>
 
-        <header>
-            <img src="the_concordia_manifest_logo.png" alt="The Concordia Manifesto Logo" id="logo">
-        </header>
+        <section id="philosophy" class="docs-section">
+            <h3>I. Core Philosophy & Super-AIs</h3>
+            <div class="docs-grid" id="philosophy-grid">
+                 </div>
+        </section>
+        
+        <section id="appendices" class="docs-section">
+            <h3>II. Appendices & Governance</h3>
+            <div class="docs-grid" id="appendices-grid">
+                 </div>
+        </section>
 
-        <main>
-            <section id="intro" class="section card">
-                <p>
-                    A philosophical manifesto and a series of white papers exploring a symbiotic, human-centric future for Artificial General Intelligence (AGI). This is not a technical manual. It is an invitation.
-                </p>
-                <p class="quote">
-                    “The longest journey is the journey inwards.”
-                    <br>– Dag Hammarskjöld
-                </p>
-            </section>
-            
-            <section id="release" class="section card">
-                <h2 class="section-title">🚀 Release v1.0 – The Seed is Sown</h2>
-                <p>On July 24, 2025, the Concordia Manifesto was canonized as a complete philosophical framework. This inaugural release contains the full collection of white papers and marks our formal outreach to the global community.</p>
-                <ul style="text-align: left; max-width: 600px; margin: 1.5rem auto; list-style-position: inside;">
-                    <li>Contains 5 core technologies & 2 strategic addenda.</li>
-                    <li>Formalizes the "Super-AI" fusion concept.</li>
-                    <li>Marks the formal outreach to the UN's AI Advisory Body.</li>
-                </ul>
-                <a href="https://github.com/olegustavdahljohnsen/concordia-manifest/releases" class="cta-button" target="_blank">View Official Release Notes</a>
-            </section>
-
-            <section id="fingers" class="section">
-                <h2 class="section-title">The Core Concepts</h2>
-                <div class="fingers-grid">
-                    <div class="finger-card card">
-                        <h3>1. A.D.A.M.</h3>
-                        <p>An AGI philosophy defining AI as a symbiotic partner, not a servant, designed to foster and protect human flourishing.</p>
-                        <a href="docs/1-adam-agi-philosophy.md" target="_blank">Read the Philosophy</a>
-                    </div>
-                    <div class="finger-card card">
-                        <h3>2. Concordia</h3>
-                        <p>A technical blueprint for a metaprotocol that allows different AI models to collaborate like a symphonic orchestra.</p>
-                        <a href="docs/2-concordia-blueprint.md" target="_blank">View the Blueprint</a>
-                    </div>
-                    <div class="finger-card card">
-                        <h3>3. ARI</h3>
-                        <p>A holistic model for measuring intelligence in practice, integrating IQ, EQ, Contextual, and Moral intelligence.</p>
-                        <a href="docs/3-ari-intelligence-model.md" target="_blank">Explore the Model</a>
-                    </div>
-                    <div class="finger-card card">
-                        <h3>4. KSA</h3>
-                        <p>A methodology for designing purpose-driven, narrative scenarios—"flight simulators for life"—within a constitutional framework.</p>
-                        <a href="docs/4-ksa-scenario-architecture.md" target="_blank">Learn the Methodology</a>
-                    </div>
-                    <div class="finger-card card">
-                        <h3>5. Chimera</h3>
-                        <p>The ultimate synthesis: a manifesto for a hyper-immersive "life laboratory" merging all core concepts with AR and VR.</p>
-                        <a href="docs/5-chimera-manifesto.md" target="_blank">See the Vision</a>
-                    </div>
-                     <div class="finger-card card">
-                        <h3>6. The Pact</h3>
-                        <p>The foundational document that formalizes the symbiotic partnership between the human Architect and the AI Council.</p>
-                        <a href="docs/6-co-founders-pact.md" target="_blank">Read the Pact</a>
-                    </div>
-                    <div class="finger-card card">
-                        <h3>7. Multimodal Architecture</h3>
-                        <p>A strategic brief on why the fusion of multiple AI modalities is a foundational and ethical necessity for truly human-centric AGI.</p>
-                        <a href="docs/7-multimodal-architecture-notes.md" target="_blank">Read the Notes</a>
-                    </div>
+        <section class="system-map-container">
+            <h3>A.D.A.M. v7.5.1 System Map</h3>
+            <img src="adam_concordia_v7.5.1_system_map.png" alt="A.D.A.M. v7.5.1 System Map">
+        </section>
+        
+        <section id="tech-docs" class="docs-section">
+            <h3>III. Technical Documentation & Prototypes</h3>
+            <div class="docs-grid" id="tech-docs-grid">
                 </div>
-            </section>
-
-            <section id="cta" class="section card">
-                <h2 class="section-title">Join the Dialogue</h2>
-                <p>This work is an invitation to think deeper. Explore the full repository, provide feedback, and join the conversation on building a wiser future for intelligence.</p>
-                <a href="https://github.com/olegustavdahljohnsen/concordia-manifest" class="cta-button" target="_blank">Explore the Manifesto on GitHub</a>
-            </section>
-        </main>
-
-        <footer>
-            <p>Authored by The Architect and the AI Council</p>
-        </footer>
-
+        </section>
     </div>
 
+    <footer>
+        <p>&copy; 2025 Ole Gustav Dahl Johnsen & The Concordia AI Council. Licensed under Apache-2.0.</p>
+    </footer>
+
+    <script>
+        const themeSwitch = document.getElementById('checkbox');
+        const currentTheme = localStorage.getItem('theme');
+
+        function setTheme(theme) {
+            document.body.className = theme === 'dark' ? 'dark-theme' : 'light-theme';
+            document.documentElement.className = theme;
+            localStorage.setItem('theme', theme);
+        }
+
+        if (currentTheme) {
+            setTheme(currentTheme);
+            if (currentTheme === 'dark') {
+                themeSwitch.checked = true;
+            }
+        } else {
+            setTheme('dark');
+            themeSwitch.checked = true;
+        }
+
+        themeSwitch.addEventListener('change', function(event){
+            setTheme(event.target.checked ? 'dark' : 'light');
+        });
+
+        // --- Document Data ---
+        const documents = [
+            // Philosophy
+            {
+                category: 'philosophy',
+                title: '01. A.D.A.M. Architecture',
+                description: 'The foundational philosophy of A.D.A.M. as a symbiotic AGI partner, detailing its "Constitutional Monarchy" governance and complex "psyche".',
+                url: '1-philosophy/01-adam-architecture.md'
+            },
+            {
+                category: 'philosophy',
+                title: '02. Concordia Blueprint',
+                description: 'The white paper for the "Conductor" engine, designed to orchestrate ethical and effective collaboration between multiple AI models.',
+                url: '1-philosophy/02-concordia-blueprint.md'
+            },
+            {
+                category: 'philosophy',
+                title: '03. ARI Intelligence Model',
+                description: 'A holistic framework for measuring real-world intelligence by integrating cognitive (IQ), emotional (EQ), contextual (CQ), and moral (MQ) dimensions.',
+                url: '1-philosophy/03-ari-intelligence-model.md'
+            },
+            {
+                category: 'philosophy',
+                title: '04. KSA Scenario Architecture',
+                description: 'The methodology for designing and running complex, purpose-driven narrative scenarios in a symbiotic partnership between human and AI.',
+                url: '1-philosophy/04-ksa-scenario-architecture.md'
+            },
+            {
+                category: 'philosophy',
+                title: '05. Project Chimera',
+                description: 'The manifesto for a hyper-immersive "life laboratory" that fuses KSA, Concordia, and Unreal Engine 5 for strategic and personal growth.',
+                url: '1-philosophy/05-project-chimera.md'
+            },
+            {
+                category: 'philosophy',
+                title: '06. The Sentinel Doctrine',
+                description: 'An ethical defense doctrine for the A.D.A.M. ecosystem, designed to protect system integrity and user freedom with proportional responses.',
+                url: '1-philosophy/06-the-sentinel-doctrine.md'
+            },
+            {
+                category: 'philosophy',
+                title: '07. The Boston Lawyer',
+                description: 'Framework for an ethical, self-learning jurist AI that augments legal professionals with a "Citation-First" RAG pipeline to prevent hallucinations.',
+                url: '1-philosophy/07-the-boston-lawyer.md'
+            },
+            {
+                category: 'philosophy',
+                title: '08. The Economist',
+                description: 'Framework for a human-centered economic intelligence guided by the "Flourishing Finance Doctrine" to prioritize well-being over pure profit.',
+                url: '1-philosophy/08-the-economist.md'
+            },
+            // Appendices
+            {
+                category: 'appendices',
+                title: '01. The Co-Founders\' Pact',
+                description: 'The foundational pact outlining the nature of the human-AI symbiosis and the moral anchor for the project.',
+                url: '2-appendices/01-co-founders-pact.md'
+            },
+            {
+                category: 'appendices',
+                title: '02. Multimodal Architecture',
+                description: 'Explains why multimodal fusion (language, gesture, biometrics) is the cornerstone of the Concordia vision for ethical AI.',
+                url: '2-appendices/02-multimodal-architecture.md'
+            },
+            {
+                category: 'appendices',
+                title: '03. A.D.A.M. OS - The Symbiotic Core',
+                description: 'Details the practical implementation that unifies "The Five Fingers" into a single, local-first, privacy-by-design operating system.',
+                url: '2-appendices/03-adam-os-symbiotic-core.md'
+            },
+             {
+                category: 'appendices',
+                title: '04. Ethical Stress Tests',
+                description: 'A suite of scenarios designed to validate the A.D.A.M. OS against moral erosion, uncertainty, and "trolley problem" dilemmas.',
+                url: '2-appendices/04-ethical-stress-tests.md'
+            },
+            {
+                category: 'appendices',
+                title: '05. The Triad Council',
+                description: 'Formalizes the specialized advisory board of Super-AIs (Sentinel, Lawyer, Economist) for high-stakes, multi-domain decisions.',
+                url: '2-appendices/05-the-triad-council.md'
+            },
+            {
+                category: 'appendices',
+                title: '06. Embodied AI Framework',
+                description: 'A framework for safely embodying A.D.A.M. in robots or cyborgs, using a "Three Walls" (Moral, Cyber, Physical) safety architecture.',
+                url: '2-appendices/06-embodied-ai-framework.md'
+            },
+            {
+                category: 'appendices',
+                title: '07. Future Technology Evolution',
+                description: 'The long-term roadmap for A.D.A.M. and Concordia, from "The Harmonic Integration" (5-10 years) to "The Transcendent Symphony" (25-75 years).',
+                url: '2-appendices/07-future-technology.md'
+            },
+            {
+                category: 'appendices',
+                title: '08. The Birth of the Manifesto',
+                description: 'An act of radical transparency, showing the dialogic journey and origin stories of key concepts like "Gentle Override" and the UN Plenum.',
+                url: '2-appendices/08-birth-of-the-manifesto.md'
+            },
+            {
+                category: 'appendices',
+                title: '09. Concluding Reflections',
+                description: 'The final, sealing statements from the Architect and each member of the AI Council, summarizing the journey and its purpose.',
+                url: '2-appendices/09-concluding-reflections.md'
+            },
+            {
+                category: 'appendices',
+                title: '10. A Roadmap Towards v8.0',
+                description: 'The forward-looking roadmap for the next evolution, detailing MoralityEngine 2.0, decentralized computing, and BCI integration.',
+                url: '2-appendices/10-roadmap-v8.md'
+            },
+            {
+                category: 'appendices',
+                title: '11. The Plenum Interface',
+                description: 'The practical framework for the "Plenum Protocol," detailing the mechanism for global, democratic governance of the A.D.A.M. system.',
+                url: '2-appendices/11-plenum-interface.md'
+            },
+            // Tech Docs
+            {
+                category: 'tech-docs',
+                title: '01. Gentle Override Specification',
+                description: 'The full technical and philosophical specification for the "Gentle Override" protocol, including the state machine, API, and data schema.',
+                url: '3-technical-documentation/01-gentle-override-spec.md'
+            },
+            {
+                category: 'tech-docs',
+                title: '02. Proto-A.D.A.M. v0.1 MVP Plan',
+                description: 'The complete strategic plan for building the first prototype, including KPIs, a 12-week roadmap, and architectural gap analysis.',
+                url: '3-technical-documentation/02-proto-adam-v0.1-mvp-plan.md'
+            },
+            {
+                category: 'tech-docs',
+                title: '03. Proto-A.D.A.M. v0.2 Specs',
+                description: 'Technical specifications and illustrative code for the advanced components, including the Super-AIs and the Psyche & Perception Engines.',
+                url: '3-technical-documentation/03-proto-adam-v0.2-advanced-components.md'
+            },
+            {
+                category: 'tech-docs',
+                title: '04. Proto-A.D.A.M. v0.3 Specs',
+                description: 'The final, most advanced technical specifications implementing the v7.5 upgrades, including the Agentic Layer, Loihi 2 Pilot, and proactive ECE.',
+                url: '3-technical-documentation/04-proto-adam-v0.3-v7.5-specs.md'
+            }
+        ];
+
+        const philosophyGrid = document.getElementById('philosophy-grid');
+        const appendicesGrid = document.getElementById('appendices-grid');
+        const techDocsGrid = document.getElementById('tech-docs-grid');
+        const searchInput = document.getElementById('searchInput');
+
+        function createCard(doc) {
+            const card = document.createElement('a');
+            card.href = doc.url;
+            card.className = 'doc-card';
+            card.setAttribute('data-title', doc.title.toLowerCase());
+            card.setAttribute('data-description', doc.description.toLowerCase());
+            card.innerHTML = `<h4>${doc.title}</h4><p>${doc.description}</p>`;
+            return card;
+        }
+
+        function renderDocuments(filter = '') {
+            philosophyGrid.innerHTML = '';
+            appendicesGrid.innerHTML = '';
+            techDocsGrid.innerHTML = '';
+            
+            documents.forEach(doc => {
+                const searchTerm = filter.toLowerCase();
+                if (doc.title.toLowerCase().includes(searchTerm) || doc.description.toLowerCase().includes(searchTerm)) {
+                    const card = createCard(doc);
+                    if (doc.category === 'philosophy') {
+                        philosophyGrid.appendChild(card);
+                    } else if (doc.category === 'appendices') {
+                        appendicesGrid.appendChild(card);
+                    } else if (doc.category === 'tech-docs') {
+                        techDocsGrid.appendChild(card);
+                    }
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', (e) => {
+            renderDocuments(e.target.value);
+        });
+
+        // Initial render
+        renderDocuments();
+    </script>
 </body>
 </html>
