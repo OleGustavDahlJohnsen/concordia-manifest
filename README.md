@@ -15,6 +15,13 @@ Ole Gustav Dahl Johnsen and the AI Council (Gemini, ChatGPT-4o, CoPilot Think De
 
 ---
 
+### The Complete Manifest (v7.5.1 PDF)
+
+For the full, consolidated vision, please read the complete document here:
+**[➡️ The Concordia Manifest v7.5.1.pdf](./the_concordia_manifest_v7_5_1.pdf)**
+
+---
+
 ### Introduction
 
 Welcome to the Concordia Manifesto – a journey into an architecture where technology and ethics are inseparable. This is not a technical manual. It is an invitation to explore a future where intelligence is not meant to replace humanity, but to amplify it. Not a ruler, but a partner.
@@ -36,7 +43,6 @@ This repository is organized to mirror the structure of the manifest itself, mak
 * [`/1-philosophy`](./1-philosophy/): Contains the core white papers for the foundational technologies and Super-AIs, such as A.D.A.M., Concordia, and The Sentinel.
 * [`/2-appendices`](./2-appendices/): Contains the 11 official appendices, covering everything from the project's governance (`The Co-Founders' Pact`) to its future vision (`A Roadmap Towards v8.0`).
 * [`/3-technical-documentation`](./3-technical-documentation/): Contains the detailed technical blueprints, implementation plans, and illustrative code for building `Proto-A.D.A.M.`.
-* [`/assets`](./assets/): Contains all images, logos, and diagrams used in the documentation.
 
 ### The Five Fingers
 
