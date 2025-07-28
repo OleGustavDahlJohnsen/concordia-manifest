@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
-    <meta charset="UTF-g">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Concordia Manifest v7.5.1</title>
     <link rel="icon" href="concordia_logo.ico" type="image/x-icon">
@@ -134,6 +134,12 @@
         }
         .light-theme .hero { border-color: var(--border-light); }
         .dark-theme .hero { border-color: var(--border-dark); }
+
+        .hero-logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
 
         .hero h2 {
             font-size: 2.5rem;
@@ -316,6 +322,7 @@
 
     <div class="container">
         <section class="hero">
+            <img src="the_concorida_manifest_logo.png" alt="The Concordia Manifest Logo" class="hero-logo">
             <h2>An "Iron Clad" Blueprint for Symbiotic AGI</h2>
             <p>
                 Welcome to the canonized v7.5.1 of The Concordia Manifest. This is the culmination of a unique symbiotic process between human vision and an AI Council, resulting in a complete philosophical and technical architecture for A.D.A.M.—an AGI designed as a partner for human flourishing. This is not a final answer, but an invitation to co-create.
@@ -360,22 +367,23 @@
 
     <script>
         const themeSwitch = document.getElementById('checkbox');
-        const currentTheme = localStorage.getItem('theme');
-
+        
         function setTheme(theme) {
             document.body.className = theme === 'dark' ? 'dark-theme' : 'light-theme';
             document.documentElement.className = theme;
             localStorage.setItem('theme', theme);
+            themeSwitch.checked = theme === 'dark';
         }
 
-        if (currentTheme) {
-            setTheme(currentTheme);
-            if (currentTheme === 'dark') {
-                themeSwitch.checked = true;
-            }
+        // Check for saved theme in localStorage
+        const savedTheme = localStorage.getItem('theme');
+        // If nothing is saved, check user's system preference
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (savedTheme) {
+            setTheme(savedTheme);
         } else {
-            setTheme('dark');
-            themeSwitch.checked = true;
+            setTheme(prefersDark ? 'dark' : 'light');
         }
 
         themeSwitch.addEventListener('change', function(event){
