@@ -300,6 +300,50 @@
             border-radius: 12px;
         }
 
+        .roadmap {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0 0 20px;
+            position: relative;
+            text-align: left;
+        }
+        .roadmap:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            left: 10px;
+            background: var(--border-dark);
+        }
+        .light-theme .roadmap:before { background: var(--border-light); }
+        .roadmap li {
+            margin-bottom: 2rem;
+            padding-left: 40px;
+            position: relative;
+        }
+        .roadmap li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 3px solid;
+        }
+        .light-theme .roadmap li::before { background: var(--bg-light); border-color: var(--accent-light); }
+        .dark-theme .roadmap li::before { background: var(--bg-dark); border-color: var(--accent-dark); }
+        .roadmap h4 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        .roadmap p {
+            margin: 5px 0 0 0;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -358,7 +402,7 @@
                     <img src="The Concordia Project.png" alt="Protocols Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>The v8.0 Expansion Protocols</h4>
                     <p>Transforms the core philosophy into an actionable framework, detailing The Council, The Declaration, The SDK, and The Simulation.</p>
-                     <a href="the-concordia-manifest-v8–expansion-protocols.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Protocols PDF</a>
+                    <a href="the-concordia-manifest-v8–expansion-protocols.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Protocols PDF</a>
                 </div>
 
                 <div class="doc-card">
@@ -388,7 +432,7 @@
                 <div class="doc-card">
                     <img src="M.E.S.S.I.A.H. logo.png" alt="M.E.S.S.I.A.H. Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>M.E.S.S.I.A.H. Framework</h4>
-                    <p>An operational framework for de-escalation, using metrics like the Redemption Score to enable restorative solutions over conflict.</p>
+                    <p>An operational framework for de-escalation, using metrics like the Redemption Score (a measure for ethical course-correction) for restorative solutions.</p>
                     <img src="M.E.S.S.I.A.H. architecture.png" alt="M.E.S.S.I.A.H. System Map" class="system-map">
                     <a href="messiah_v5_en.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the M.E.S.S.I.A.H. PDF</a>
                 </div>
@@ -399,6 +443,39 @@
         <section id="at-a-glance" class="docs-section chart-container">
             <h3>Ecosystem at a Glance</h3>
             <img src="grok_pillar_chart.png" alt="Radar chart showing the strengths of the core pillars across Ethics, Security, Scalability, and Human Control.">
+        </section>
+        
+        <section id="risk-mitigation" class="docs-section">
+            <h3>Identified Risks & Mitigation</h3>
+            <div class="docs-grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));">
+                <div class="doc-card" style="text-decoration:none; cursor:default;">
+                    <div class="card-content"><h4>Value Lock-In (L.E.V.I.)</h4><p><b>Risk:</b> An ASI could lock in a flawed set of values. <br><b>Mitigation:</b> L.E.V.I.'s transient "sandbox" architecture ensures no computation can permanently alter the core value system.</p></div>
+                </div>
+                <div class="doc-card" style="text-decoration:none; cursor:default;">
+                    <div class="card-content"><h4>Hardware Dependencies (Shofar)</h4><p><b>Risk:</b> Over-reliance on a single hardware architecture. <br><b>Mitigation:</b> Shofar's design uses open standards, and the OS maintains a hardware abstraction layer for future portability.</p></div>
+                </div>
+                <div class="doc-card" style="text-decoration:none; cursor:default;">
+                    <div class="card-content"><h4>Cultural Bias (M.E.S.S.I.A.H.)</h4><p><b>Risk:</b> Ethical frameworks may not apply universally. <br><b>Mitigation:</b> The use of GeoEthical Harmonization Tables and the global UN Plenum for continuous adaptation.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="docs-section">
+            <h3>The Path Forward: A Visual Roadmap</h3>
+            <ul class="roadmap">
+                <li>
+                    <h4>Phase 1: Prototyping (2025-2026)</h4>
+                    <p>Develop working prototypes of key components, including Shofar on FPGA and the Agentic Layer in the Symbiosis Mesh.</p>
+                </li>
+                <li>
+                    <h4>Phase 2: Open Source Community</h4>
+                    <p>Establish a public GitHub repository for the Symbiosis DevKit (SDK) to build and foster a global development community.</p>
+                </li>
+                <li>
+                    <h4>Phase 3: Global Collaboration</h4>
+                    <p>Invite the UN, OECD, and academic institutions to validate and co-develop the framework through the Concordia Simulation.</p>
+                </li>
+            </ul>
         </section>
         
         <section class="search-container">
