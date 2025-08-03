@@ -130,7 +130,10 @@
         .hero {
             text-align: center;
             padding: 4rem 1rem;
+            border-bottom: 1px solid;
         }
+        .light-theme .hero { border-color: var(--border-light); }
+        .dark-theme .hero { border-color: var(--border-dark); }
 
         .hero-logo {
             max-width: 250px;
@@ -163,6 +166,7 @@
             font-weight: 600;
             transition: transform 0.2s, box-shadow 0.2s;
             display: inline-block;
+            text-align: center;
         }
         .btn:hover {
             transform: translateY(-2px);
@@ -233,12 +237,12 @@
 
         .doc-card {
             border-radius: 12px;
+            padding: 1.5rem;
             text-decoration: none;
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
             border: 1px solid;
-            overflow: hidden;
         }
         .light-theme .doc-card {
             background-color: var(--card-bg-light);
@@ -252,34 +256,15 @@
         .doc-card:hover {
             transform: translateY(-5px);
         }
-        .light-theme .doc-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+        .light-theme .doc-card:hover { box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
         .dark-theme .doc-card:hover { border-color: var(--accent-dark); }
-
-        .card-content {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        
-        .card-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        .card-logo {
-            width: 40px;
-            height: 40px;
-            margin-right: 1rem;
-            object-fit: contain;
-        }
         
         .doc-card h4 {
-            margin: 0;
+            margin: 0 0 0.5rem 0;
             font-size: 1.2rem;
         }
-        .light-theme .doc-card h4 { color: var(--text-light); }
-        .dark-theme .doc-card h4 { color: var(--text-dark); }
+        .light-theme .doc-card h4 { color: var(--accent-light); }
+        .dark-theme .doc-card h4 { color: var(--accent-dark); }
         
         .doc-card p {
             margin: 0;
@@ -288,12 +273,17 @@
             line-height: 1.5;
             opacity: 0.8;
         }
-        .card-footer {
+        
+        .doc-card img.system-map {
             margin-top: 1rem;
-            font-weight: 600;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+            max-width: 100%;
+            height: auto;
         }
-        .light-theme .card-footer { color: var(--accent-light); }
-        .dark-theme .card-footer { color: var(--accent-dark); }
+        .dark-theme .doc-card img.system-map {
+            border-color: var(--border-dark);
+        }
         
         footer {
             text-align: center;
@@ -331,88 +321,69 @@
                 Welcome to the canonized v8.2 of The Concordia Project. This is the culmination of a unique symbiotic process between human vision and an AI Council, resulting in a complete philosophical and technical architecture—a master blueprint for AI designed as a partner for human flourishing. This is not a final answer, but an invitation to co-create.
             </p>
             <div class="hero-buttons">
-                <a href="the-concordia-project-v8-the-complete-synthesis.pdf" class="btn btn-primary" target="_blank">Read the Complete Synthesis (PDF)</a>
+                <a href="the-concordia-project-v8–the-complete-synthesis.pdf" class="btn btn-primary" target="_blank">Read the Complete Synthesis (PDF)</a>
                 <a href="https://github.com/olegustavdahljohnsen/concordia-manifest" class="btn btn-secondary" target="_blank">View on GitHub</a>
             </div>
         </section>
-        
-        <section id="core-pillars" class="docs-section">
-            <h3>The Core Pillars</h3>
-            <div class="docs-grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));">
 
-                <a href="the-concordia-manifest-v8-expansion-protocols.pdf" target="_blank" class="doc-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <img src="The Concordia Project.png" alt="Protocols Logo" class="card-logo">
-                            <h4>The v8.0 Expansion Protocols</h4>
-                        </div>
-                        <p>Transforms the core philosophy into an actionable framework, detailing The Council, The Declaration, The SDK, and The Simulation.</p>
-                        <div class="card-footer"><span>Read the Protocols &rarr;</span></div>
-                    </div>
-                </a>
+        <section id="core-systems" class="docs-section">
+            <h3>The Core Pillars & Prototypes</h3>
+            <div class="docs-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
 
-                <a href="levi_the_liminal_bridge.pdf" target="_blank" class="doc-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <img src="levi_logo.png" alt="L.E.V.I. Logo" class="card-logo">
-                            <h4>L.E.V.I. – The Liminal Bridge</h4>
-                        </div>
-                        <p>A critical safety protocol to safely explore Artificial Superintelligence through a transient, isolated "sandbox" with a two-way veto system.</p>
-                        <div class="card-footer"><span>Read the White Paper &rarr;</span></div>
-                    </div>
-                </a>
-
-                <a href="the_shofar_architecture_v5.pdf" target="_blank" class="doc-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <img src="shofar_logo.png" alt="Shofar Logo" class="card-logo">
-                            <h4>Shofar Architecture</h4>
-                        </div>
-                        <p>The custom-built hardware with a non-bypassable ethical security layer, designed to be the physical anchor of trust for the ecosystem.</p>
-                        <div class="card-footer"><span>Read the Architecture &rarr;</span></div>
-                    </div>
-                </a>
+                <div class="doc-card">
+                    <img src="The Concordia Project.png" alt="Synthesis Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
+                    <h4>The Complete Synthesis (v8.2)</h4>
+                    <p>The master blueprint and authoritative summary of the entire project. The recommended starting point.</p>
+                    <img src="adam_concordia_v7.5.1_system_map.png" alt="System Map" class="system-map">
+                    <a href="the-concordia-project-v8–the-complete-synthesis.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Synthesis PDF</a>
+                </div>
                 
-                <a href="messiah_v5_en.pdf" target="_blank" class="doc-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                             <img src="messiah_logo.png" alt="M.E.S.S.I.A.H. Logo" class="card-logo">
-                            <h4>M.E.S.S.I.A.H. Framework</h4>
-                        </div>
-                        <p>An operational framework for de-escalation, forgiveness, and ethical resolution, anchored in a UN-aligned governance model.</p>
-                        <div class="card-footer"><span>Read the Framework &rarr;</span></div>
-                    </div>
-                </a>
+                <div class="doc-card">
+                    <img src="The Concordia Project.png" alt="Protocols Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
+                    <h4>The v8.0 Expansion Protocols</h4>
+                    <p>Transforms the core philosophy into an actionable framework, detailing The Council, The Declaration, The SDK, and The Simulation.</p>
+                    <a href="the-concordia-manifest-v8–expansion-protocols.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Protocols PDF</a>
+                </div>
 
-                <a href="Manifesto for ELIAH defense system.pdf" target="_blank" class="doc-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <img src="eliah_logo.png" alt="E.L.I.A.H. Logo" class="card-logo">
-                            <h4>E.L.I.A.H. Manifesto</h4>
-                        </div>
-                        <p>A purely defensive security doctrine built on the "Veto First, Fire Later" principle, ensuring human-centric control and non-escalation.</p>
-                         <div class="card-footer"><span>Read the Manifesto &rarr;</span></div>
-                    </div>
-                </a>
-
-                <a href="The Concordia Manifest.pdf" target="_blank" class="doc-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <img src="Concordia Hand Logo Transparent.png" alt="Manifest v7.5.1 Logo" class="card-logo">
-                            <h4>The Foundational Manifest (v7.5.1)</h4>
-                        </div>
-                        <p>The original, comprehensive document containing the 11 core Technology White Papers that form the project's deep foundation.</p>
-                        <div class="card-footer"><span>Explore the Archive &rarr;</span></div>
-                    </div>
-                </a>
+                <div class="doc-card">
+                    <img src="levi_logo.png" alt="L.E.V.I. Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
+                    <h4>L.E.V.I. – The Liminal Bridge</h4>
+                    <p>A critical safety protocol to safely explore Artificial Superintelligence through a transient, isolated "sandbox".</p>
+                    <img src="levi_system_map.png" alt="L.E.V.I. System Map" class="system-map">
+                    <a href="levi_the_liminal_bridge.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the L.E.V.I. PDF</a>
+                </div>
                 
+                <div class="doc-card">
+                    <img src="Shofar logo.png" alt="Shofar Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
+                    <h4>Shofar Architecture</h4>
+                    <p>The hardware blueprint for a symbiotic AI accelerator, balancing performance with a non-bypassable ethical core.</p>
+                    <img src="Shofar architecture.png" alt="Shofar System Map" class="system-map">
+                    <a href="the_shofar_architecture_v5.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Shofar PDF</a>
+                </div>
+
+                <div class="doc-card">
+                    <img src="E.L.I.A.H. logo.png" alt="E.L.I.A.H. Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
+                    <h4>E.L.I.A.H. Manifesto</h4>
+                    <p>A purely defensive security system built on the "Veto First, Fire Later" doctrine, ensuring human-centric control.</p>
+                    <img src="System map.png" alt="E.L.I.A.H. System Map" class="system-map">
+                    <a href="manifesto_for_eliah_defense_system.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the E.L.I.A.H. PDF</a>
+                </div>
+
+                <div class="doc-card">
+                    <img src="M.E.S.S.I.A.H. logo.png" alt="M.E.S.S.I.A.H. Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
+                    <h4>M.E.S.S.I.A.H. Framework</h4>
+                    <p>An operational framework for hope and de-escalation, enabling restorative solutions over conflict in AI systems.</p>
+                    <img src="M.E.S.S.I.A.H. architecture.png" alt="M.E.S.S.I.A.H. System Map" class="system-map">
+                    <a href="messiah_v5_en.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the M.E.S.S.I.A.H. PDF</a>
+                </div>
+
             </div>
         </section>
-
+        
         <section class="search-container">
             <input type="text" id="searchInput" placeholder="Search all sub-documents...">
         </section>
-        
+
         <section id="philosophy" class="docs-section">
             <h3>I. Core Philosophy & Super-AIs</h3>
             <div class="docs-grid" id="philosophy-grid"></div>
@@ -422,11 +393,12 @@
             <h3>II. Appendices & Governance</h3>
             <div class="docs-grid" id="appendices-grid"></div>
         </section>
-        
+
         <section id="tech-docs" class="docs-section">
             <h3>III. Technical Documentation & Prototypes</h3>
             <div class="docs-grid" id="tech-docs-grid"></div>
         </section>
+
     </div>
 
     <footer>
@@ -463,141 +435,141 @@
                 category: 'philosophy',
                 title: '01. A.D.A.M. Architecture',
                 description: 'The foundational philosophy of A.D.A.M. as a symbiotic AGI partner, detailing its "Constitutional Monarchy" governance and complex "psyche".',
-                url: 'docs/01-adam-architecture.md'
+                url: '1-philosophy/01-adam-architecture.md'
             },
             {
                 category: 'philosophy',
                 title: '02. Concordia Blueprint',
                 description: 'The white paper for the "Conductor" engine, designed to orchestrate ethical and effective collaboration between multiple AI models.',
-                url: 'docs/02-concordia-blueprint.md'
+                url: '1-philosophy/02-concordia-blueprint.md'
             },
             {
                 category: 'philosophy',
                 title: '03. ARI Intelligence Model',
                 description: 'A holistic framework for measuring real-world intelligence by integrating cognitive (IQ), emotional (EQ), contextual (CQ), and moral (MQ) dimensions.',
-                url: 'docs/03-ari-intelligence-model.md'
+                url: '1-philosophy/03-ari-intelligence-model.md'
             },
             {
                 category: 'philosophy',
                 title: '04. KSA Scenario Architecture',
                 description: 'The methodology for designing and running complex, purpose-driven narrative scenarios in a symbiotic partnership between human and AI.',
-                url: 'docs/04-ksa-scenario-architecture.md'
+                url: '1-philosophy/04-ksa-scenario-architecture.md'
             },
             {
                 category: 'philosophy',
                 title: '05. Project Chimera',
                 description: 'The manifesto for a hyper-immersive "life laboratory" that fuses KSA, Concordia, and Unreal Engine 5 for strategic and personal growth.',
-                url: 'docs/05-project-chimera.md'
+                url: '1-philosophy/05-project-chimera.md'
             },
             {
                 category: 'philosophy',
                 title: '06. The Sentinel Doctrine',
                 description: 'An ethical defense doctrine for the A.D.A.M. ecosystem, designed to protect system integrity and user freedom with proportional responses.',
-                url: 'docs/06-the-sentinel-doctrine.md'
+                url: '1-philosophy/06-the-sentinel-doctrine.md'
             },
             {
                 category: 'philosophy',
                 title: '07. The Boston Lawyer',
                 description: 'Framework for an ethical, self-learning jurist AI that augments legal professionals with a "Citation-First" RAG pipeline to prevent hallucinations.',
-                url: 'docs/07-the-boston-lawyer.md'
+                url: '1-philosophy/07-the-boston-lawyer.md'
             },
             {
                 category: 'philosophy',
                 title: '08. The Economist',
                 description: 'Framework for a human-centered economic intelligence guided by the "Flourishing Finance Doctrine" to prioritize well-being over pure profit.',
-                url: 'docs/08-the-economist.md'
+                url: '1-philosophy/08-the-economist.md'
             },
             // Appendices
             {
                 category: 'appendices',
                 title: '01. The Co-Founders\' Pact',
                 description: 'The foundational pact outlining the nature of the human-AI symbiosis and the moral anchor for the project.',
-                url: 'docs/01-co-founders-pact.md'
+                url: '2-appendices/01-co-founders-pact.md'
             },
             {
                 category: 'appendices',
                 title: '02. Multimodal Architecture',
                 description: 'Explains why multimodal fusion (language, gesture, biometrics) is the cornerstone of the Concordia vision for ethical AI.',
-                url: 'docs/02-multimodal-architecture.md'
+                url: '2-appendices/02-multimodal-architecture.md'
             },
             {
                 category: 'appendices',
                 title: '03. A.D.A.M. OS - The Symbiotic Core',
                 description: 'Details the practical implementation that unifies "The Five Fingers" into a single, local-first, privacy-by-design operating system.',
-                url: 'docs/03-adam-os-symbiotic-core.md'
+                url: '2-appendices/03-adam-os-symbiotic-core.md'
             },
              {
                 category: 'appendices',
                 title: '04. Ethical Stress Tests',
                 description: 'A suite of scenarios designed to validate the A.D.A.M. OS against moral erosion, uncertainty, and "trolley problem" dilemmas.',
-                url: 'docs/04-ethical-stress-tests.md'
+                url: '2-appendices/04-ethical-stress-tests.md'
             },
             {
                 category: 'appendices',
                 title: '05. The Triad Council',
                 description: 'Formalizes the specialized advisory board of Super-AIs (Sentinel, Lawyer, Economist) for high-stakes, multi-domain decisions.',
-                url: 'docs/05-the-triad-council.md'
+                url: '2-appendices/05-the-triad-council.md'
             },
             {
                 category: 'appendices',
                 title: '06. Embodied AI Framework',
                 description: 'A framework for safely embodying A.D.A.M. in robots or cyborgs, using a "Three Walls" (Moral, Cyber, Physical) safety architecture.',
-                url: 'docs/06-embodied-ai-framework.md'
+                url: '2-appendices/06-embodied-ai-framework.md'
             },
             {
                 category: 'appendices',
                 title: '07. Future Technology Evolution',
                 description: 'The long-term roadmap for A.D.A.M. and Concordia, from "The Harmonic Integration" (5-10 years) to "The Transcendent Symphony" (25-75 years).',
-                url: 'docs/07-future-technology.md'
+                url: '2-appendices/07-future-technology.md'
             },
             {
                 category: 'appendices',
                 title: '08. The Birth of the Manifesto',
                 description: 'An act of radical transparency, showing the dialogic journey and origin stories of key concepts like "Gentle Override" and the UN Plenum.',
-                url: 'docs/08-birth-of-the-manifesto.md'
+                url: '2-appendices/08-birth-of-the-manifesto.md'
             },
             {
                 category: 'appendices',
                 title: '09. Concluding Reflections',
                 description: 'The final, sealing statements from the Architect and each member of the AI Council, summarizing the journey and its purpose.',
-                url: 'docs/09-concluding-reflections.md'
+                url: '2-appendices/09-concluding-reflections.md'
             },
             {
                 category: 'appendices',
                 title: '10. A Roadmap Towards v8.0',
                 description: 'The forward-looking roadmap for the next evolution, detailing MoralityEngine 2.0, decentralized computing, and BCI integration.',
-                url: 'docs/10-roadmap-v8.md'
+                url: '2-appendices/10-roadmap-v8.md'
             },
             {
                 category: 'appendices',
                 title: '11. The Plenum Interface',
                 description: 'The practical framework for the "Plenum Protocol," detailing the mechanism for global, democratic governance of the A.D.A.M. system.',
-                url: 'docs/11-plenum-interface.md'
+                url: '2-appendices/11-plenum-interface.md'
             },
             // Tech Docs
             {
                 category: 'tech-docs',
                 title: '01. Gentle Override Specification',
                 description: 'The full technical and philosophical specification for the "Gentle Override" protocol, including the state machine, API, and data schema.',
-                url: 'docs/01-gentle-override-spec.md'
+                url: '3-technical-documentation/01-gentle-override-spec.md'
             },
             {
                 category: 'tech-docs',
                 title: '02. Proto-A.D.A.M. v0.1 MVP Plan',
                 description: 'The complete strategic plan for building the first prototype, including KPIs, a 12-week roadmap, and architectural gap analysis.',
-                url: 'docs/02-proto-adam-v0.1-mvp-plan.md'
+                url: '3-technical-documentation/02-proto-adam-v0.1-mvp-plan.md'
             },
             {
                 category: 'tech-docs',
                 title: '03. Proto-A.D.A.M. v0.2 Specs',
                 description: 'Technical specifications and illustrative code for the advanced components, including the Super-AIs and the Psyche & Perception Engines.',
-                url: 'docs/03-proto-adam-v0.2-advanced-components.md'
+                url: '3-technical-documentation/03-proto-adam-v0.2-advanced-components.md'
             },
             {
                 category: 'tech-docs',
                 title: '04. Proto-A.D.A.M. v0.3 Specs',
                 description: 'The final, most advanced technical specifications implementing the v7.5 upgrades, including the Agentic Layer, Loihi 2 Pilot, and proactive ECE.',
-                url: 'docs/04-proto-adam-v0.3-v7.5-specs.md'
+                url: '3-technical-documentation/04-proto-adam-v0.3-v7.5-specs.md'
             }
         ];
 
@@ -613,14 +585,7 @@
             card.target = '_blank';
             card.setAttribute('data-title', doc.title.toLowerCase());
             card.setAttribute('data-description', doc.description.toLowerCase());
-            
-            const content = document.createElement('div');
-            content.className = 'card-content';
-            content.innerHTML = `
-                <h4>${doc.title}</h4>
-                <p>${doc.description}</p>
-                <div class="card-footer"><span>Read Document &rarr;</span></div>`;
-            card.appendChild(content);
+            card.innerHTML = `<h4>${doc.title}</h4><p>${doc.description}</p>`;
             return card;
         }
 
