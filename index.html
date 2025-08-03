@@ -285,6 +285,21 @@
             border-color: var(--border-dark);
         }
         
+        .chart-container {
+            padding: 2rem 0;
+            margin: 2rem 0;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+        .light-theme .chart-container { border-color: var(--border-light); }
+        .dark-theme .chart-container { border-color: var(--border-dark); }
+
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -322,8 +337,8 @@
             </p>
             <div class="hero-buttons">
                 <a href="the-concordia-project-v8–the-complete-synthesis.pdf" class="btn btn-primary" target="_blank">Read the Complete Synthesis (PDF)</a>
-                <a href="https://github.com/olegustavdahljohnsen/concordia-manifest/archive/refs/heads/main.zip" class="btn btn-secondary">Download Repository (.ZIP)</a>
                 <a href="https://github.com/olegustavdahljohnsen/concordia-manifest" class="btn btn-secondary" target="_blank">View on GitHub</a>
+                <a href="https://github.com/olegustavdahljohnsen/concordia-manifest/issues" class="btn btn-secondary" target="_blank">Join the Discussion</a>
             </div>
         </section>
 
@@ -343,13 +358,13 @@
                     <img src="The Concordia Project.png" alt="Protocols Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>The v8.0 Expansion Protocols</h4>
                     <p>Transforms the core philosophy into an actionable framework, detailing The Council, The Declaration, The SDK, and The Simulation.</p>
-                    <a href="the-concordia-manifest-v8–expansion-protocols.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Protocols PDF</a>
+                     <a href="the-concordia-manifest-v8–expansion-protocols.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Protocols PDF</a>
                 </div>
 
                 <div class="doc-card">
                     <img src="levi_logo.png" alt="L.E.V.I. Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>L.E.V.I. – The Liminal Bridge</h4>
-                    <p>A critical safety protocol to safely explore Artificial Superintelligence through a transient, isolated "sandbox".</p>
+                    <p>A safety protocol to explore ASI through a transient "sandbox", stress-tested in Project Chimera and proven safe with TLA+ (a method for mathematical verification).</p>
                     <img src="levi_system_map.png" alt="L.E.V.I. System Map" class="system-map">
                     <a href="levi_the_liminal_bridge.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the L.E.V.I. PDF</a>
                 </div>
@@ -357,7 +372,7 @@
                 <div class="doc-card">
                     <img src="Shofor logo.png" alt="Shofar Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>Shofar Architecture</h4>
-                    <p>The hardware blueprint for a symbiotic AI accelerator, balancing performance with a non-bypassable ethical core.</p>
+                    <p>Hardware blueprint for a symbiotic AI accelerator with a Moriah Layer (a non-bypassable security core in silicon) and a Gentle Override function.</p>
                     <img src="Shoufar architecture.png" alt="Shofar System Map" class="system-map">
                     <a href="the_shofar_architecture_v5.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Shofar PDF</a>
                 </div>
@@ -365,7 +380,7 @@
                 <div class="doc-card">
                     <img src="E.L.I.A.H. logo.png" alt="E.L.I.A.H. Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>E.L.I.A.H. Manifesto</h4>
-                    <p>A purely defensive security system built on the "Veto First, Fire Later" doctrine, ensuring human-centric control.</p>
+                    <p>A purely defensive security system built on the "Veto First, Fire Later" doctrine, ensuring human-centric control in all scenarios.</p>
                     <img src="System map.png" alt="E.L.I.A.H. System Map" class="system-map">
                     <a href="manifesto_for_eliah_defense_system.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the E.L.I.A.H. PDF</a>
                 </div>
@@ -373,12 +388,17 @@
                 <div class="doc-card">
                     <img src="M.E.S.S.I.A.H. logo.png" alt="M.E.S.S.I.A.H. Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>M.E.S.S.I.A.H. Framework</h4>
-                    <p>An operational framework for hope and de-escalation, enabling restorative solutions over conflict in AI systems.</p>
+                    <p>An operational framework for de-escalation, using metrics like the Redemption Score to enable restorative solutions over conflict.</p>
                     <img src="M.E.S.S.I.A.H. architecture.png" alt="M.E.S.S.I.A.H. System Map" class="system-map">
                     <a href="messiah_v5_en.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the M.E.S.S.I.A.H. PDF</a>
                 </div>
 
             </div>
+        </section>
+
+        <section id="at-a-glance" class="docs-section chart-container">
+            <h3>Ecosystem at a Glance</h3>
+            <img src="grok_pillar_chart.png" alt="Radar chart showing the strengths of the core pillars across Ethics, Security, Scalability, and Human Control.">
         </section>
         
         <section class="search-container">
@@ -403,7 +423,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Ole Gustav Dahl Johnsen & The Concordia AI Council. Licensed under Apache-2.0.</p>
+        <p>&copy; 2025 Ole Gustav Dahl Johnsen & The Concordia AI Council. Licensed under Apache-2.0. | Date: August 4, 2025</p>
     </footer>
 
     <script>
