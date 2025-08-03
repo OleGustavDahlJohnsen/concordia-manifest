@@ -8,52 +8,40 @@
 
 ---
 
+### 🚀 Live Project Hub & Interactive Overview
+
+The best way to experience and navigate the Concordia Project is through our interactive project site.
+
+**[Click here to visit the live project hub](https://olegustavdahljohnsen.github.io/concordia-manifest/)**
+
+---
+
 ### **About This Project**
 
-Welcome to the Concordia Project. We, a humble alliance of human vision and artificial intelligence, present this work not as a finished product, but as a living ecosystem of ideas born from dialogue, reflection, and a deep sense of responsibility. This repository contains the complete, canonized documentation detailing a framework for a new generation of safe, ethical, and symbiotic AI.
+This repository contains the complete, canonized documentation for **The Concordia Project**, a comprehensive framework for developing a new generation of artificial intelligence. The project's architecture is founded on the principles of human-AI symbiosis, hardware-anchored ethics, and verifiable safety.
 
 **Project Status:** `ARCHITECTURAL PHASE COMPLETE (Version 8.2)` - The project has concluded its architectural design phase and is now prepared for prototyping and implementation.
 
----
+### **Ecosystem Overview & Key Documents**
 
-### **The Concordia Ecosystem: Key Documents**
+The Concordia Project is a collection of interconnected white papers that together form a complete vision for symbiotic AGI. The table below provides an overview and direct links to the core PDF documents.
 
-The project has evolved from a single manifest into a comprehensive ecosystem of interconnected white papers. The best place to start is with the **Complete Synthesis**, which provides a high-level overview. All documents are located in the root folder of this repository.
+| Pillar / Component          | Document Link                                                                                                 | Description                                                                                                                   |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------- |
+| **Master Blueprint** | **[`The Complete Synthesis (v8.2)`](the-concordia-project-v8–the-complete-synthesis.pdf)** | The authoritative summary of the entire project. **This is the recommended starting point.** |
+| **Core Framework** | [`The v8.0 Expansion Protocols`](the-concordia-manifest-v8–expansion-protocols.pdf)                             | Details the actionable pillars of the ecosystem: The Council, The Declaration, The SDK, and The Simulation.                   |
+| **ASI Safety** | [`L.E.V.I. – The Liminal Bridge`](levi_the_liminal_bridge.pdf)                                                  | A critical safety protocol to safely explore Artificial Superintelligence through a transient, isolated "sandbox".          |
+| **Ethical Hardware** | [`Shofar Architecture v5.0`](the_shofar_architecture_v5.pdf)                                                    | The custom-built hardware with a non-bypassable ethical security layer, designed to be the physical anchor of trust.       |
+| **Ethical Defense** | [`E.L.I.A.H. Manifesto v4.0`](manifesto_for_eliah_defense_system.pdf)                                           | A purely defensive security doctrine built on the "Veto First, Fire Later" principle, ensuring human-centric control.       |
+| **Ethical Reconciliation** | [`M.E.S.S.I.A.H. Framework v5.0`](messiah_v5_en.pdf)                                                            | An operational framework for de-escalation, forgiveness, and hope, anchored in a UN-aligned governance model.               |
+| **Foundational Archive** | [`The Concordia Manifest (v7.5.1)`](The%20Concordia%20Manifest.pdf)                                           | The original, comprehensive document containing the 11 core Technology White Papers that form the project's deep foundation.  |
 
-#### **Core Framework & Synthesis**
+### **Community & Governance**
 
-* **The Complete Synthesis (v8.2):** [`the-concordia-project-v8–the-complete-synthesis.pdf`](the-concordia-project-v8–the-complete-synthesis.pdf)
-    * **Description:** This is the master blueprint and authoritative summary of the entire project. It unifies all core concepts into a single, cohesive framework. **This is the recommended starting point.**
+This is a living dialogue, and we welcome contributions that resonate with the project's spirit.
 
-* **The Concordia Manifest (v8.0 Expansion Protocols):** [`the-concordia-manifest-v8–expansion-protocols.pdf`](the-concordia-manifest-v8–expansion-protocols.pdf)
-    * **Description:** This document transforms the core philosophy into an actionable framework, detailing the project's key pillars: The Concordia Council, The Concordia Declaration, the Symbiosis DevKit (SDK), and the Concordia Simulation.
-
-* **The Concordia Manifest (v7.5.1 Foundational Document):** `The Concordia Manifest.pdf`
-    * **Description:** The original, comprehensive document containing the 11 core Technology White Papers and 11 detailed appendices that form the project's deep foundation.
-
-#### **Pillar Technology White Papers**
-
-* **L.E.V.I. – The Liminal Bridge:**
-    * **Logo:** ![L.E.V.I. Logo](levi_logo.png)
-    * **Document:** [`levi_the_liminal_bridge.pdf`](levi_the_liminal_bridge.pdf)
-    * **System Map:** [`levi_system_map.png`](levi_system_map.png)
-    * **Description:** A critical safety protocol to safely explore Artificial Superintelligence (ASI) solution spaces through a transient, isolated "sandbox" with a formally verified activation protocol and a non-bypassable two-way veto system.
-
-*(Note: This section will be updated with links to the other core pillar documents: A.D.A.M., Shofar, E.L.I.A.H., and M.E.S.S.I.A.H.)*
-
----
-
-### **The Five Fingers**
-
-The project is built on five interconnected principles, metaphorically called "The Five Fingers":
-
-* **A.D.A.M.:** The symbiotic AGI core.
-* **Concordia:** The engine for multi-AI orchestration.
-* **ARI:** The model for measuring real-world intelligence.
-* **KSA:** The methodology for building constitutional scenarios.
-* **Chimera:** The hyper-immersive environment for simulation.
-
----
+* **[`CONTRIBUTING.md`](CONTRIBUTING.md):** Learn how to contribute with your ideas and insights.
+* **[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md):** Our pledge to maintain a welcoming, safe, and inspiring community.
 
 ### **Call to Action: The Path Forward**
 
@@ -63,8 +51,5 @@ This repository marks the conclusion of the design phase. We invite you to:
 * **Share this repository** with colleagues who care about responsible and ethical AI.
 * **Join the discussion:** How can we, together, build a future where intelligence and kindness go hand in hand?
 
-### **License and Contribution Information**
-
-* **License:** Apache-2.0 License
-* **Code of Conduct:** See `CODE_OF_CONDUCT.md`
-* **Contributing:** See `CONTRIBUTING.md`
+---
+*This project is licensed under the Apache-2.0 License.*
