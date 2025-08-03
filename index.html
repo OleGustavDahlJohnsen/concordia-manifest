@@ -357,7 +357,7 @@
                     <img src="Shofor logo.png" alt="Shofar Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>Shofar Architecture</h4>
                     <p>The hardware blueprint for a symbiotic AI accelerator, balancing performance with a non-bypassable ethical core.</p>
-                    <img src="concordia-manifest/Shoufar architecture.png" alt="Shofar System Map" class="system-map">
+                    <img src="Shoufar architecture.png" alt="Shofar System Map" class="system-map">
                     <a href="the_shofar_architecture_v5.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Shofar PDF</a>
                 </div>
 
@@ -588,7 +588,10 @@
             
             const content = document.createElement('div');
             // Simplified card content for the dynamic list
-            content.innerHTML = `<h4>${doc.title}</h4><p>${doc.description}</p>`;
+            content.className = "card-content";
+            content.innerHTML = `
+                <h4>${doc.title}</h4>
+                <p>${doc.description}</p>`;
             card.appendChild(content);
             return card;
         }
