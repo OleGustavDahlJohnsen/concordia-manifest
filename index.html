@@ -354,10 +354,10 @@
                 </div>
                 
                 <div class="doc-card">
-                    <img src="Shofar logo.png" alt="Shofar Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
+                    <img src="Shofor logo.png" alt="Shofar Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>Shofar Architecture</h4>
                     <p>The hardware blueprint for a symbiotic AI accelerator, balancing performance with a non-bypassable ethical core.</p>
-                    <img src="Shofar architecture.png" alt="Shofar System Map" class="system-map">
+                    <img src="concordia-manifest/Shoufar architecture.png" alt="Shofar System Map" class="system-map">
                     <a href="the_shofar_architecture_v5.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Shofar PDF</a>
                 </div>
 
@@ -393,7 +393,7 @@
             <h3>II. Appendices & Governance</h3>
             <div class="docs-grid" id="appendices-grid"></div>
         </section>
-
+        
         <section id="tech-docs" class="docs-section">
             <h3>III. Technical Documentation & Prototypes</h3>
             <div class="docs-grid" id="tech-docs-grid"></div>
@@ -585,7 +585,11 @@
             card.target = '_blank';
             card.setAttribute('data-title', doc.title.toLowerCase());
             card.setAttribute('data-description', doc.description.toLowerCase());
-            card.innerHTML = `<h4>${doc.title}</h4><p>${doc.description}</p>`;
+            
+            const content = document.createElement('div');
+            // Simplified card content for the dynamic list
+            content.innerHTML = `<h4>${doc.title}</h4><p>${doc.description}</p>`;
+            card.appendChild(content);
             return card;
         }
 
