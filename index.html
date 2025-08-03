@@ -272,6 +272,15 @@
             opacity: 0.8;
         }
         
+        .doc-card img.system-map {
+            margin-top: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+        }
+        .dark-theme .doc-card img.system-map {
+            border-color: var(--border-dark);
+        }
+
         .system-map-container {
             text-align: center;
             margin: 4rem 0;
@@ -345,21 +354,24 @@
                     <img src="Shofor logo.png" alt="Shofar Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>Shofar Architecture</h4>
                     <p>The hardware blueprint for a symbiotic AI accelerator, balancing performance with a non-bypassable ethical core.</p>
-                    <a href="docs/the_shofar_architecture_v5.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Shofar PDF</a>
+                    <img src="Shoufar architecture.png" alt="Shofar System Map" class="system-map">
+                    <a href="the_shofar_architecture_v5.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the Shofar PDF</a>
                 </div>
 
                 <div class="doc-card">
                     <img src="E.L.I.A.H. logo.png" alt="E.L.I.A.H. Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>E.L.I.A.H. Manifesto</h4>
                     <p>A purely defensive security system built on the "Veto First, Fire Later" doctrine, ensuring human-centric control.</p>
-                    <a href="docs/manifesto_for_eliah_defense_system.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the E.L.I.A.H. PDF</a>
+                    <img src="System map.png" alt="E.L.I.A.H. System Map" class="system-map">
+                    <a href="manifesto_for_eliah_defense_system.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the E.L.I.A.H. PDF</a>
                 </div>
 
                 <div class="doc-card">
                     <img src="M.E.S.S.I.A.H. logo.png" alt="M.E.S.S.I.A.H. Logo" style="max-width: 150px; margin-bottom: 1rem; align-self: center;">
                     <h4>M.E.S.S.I.A.H. Framework</h4>
                     <p>An operational framework for hope and de-escalation, enabling restorative solutions over conflict in AI systems.</p>
-                    <a href="docs/messiah_v5_en.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the M.E.S.S.I.A.H. PDF</a>
+                    <img src="M.E.S.S.I.A.H. architecture.png" alt="M.E.S.S.I.A.H. System Map" class="system-map">
+                    <a href="messiah_v5_en.pdf" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Read the M.E.S.S.I.A.H. PDF</a>
                 </div>
 
             </div>
@@ -418,6 +430,26 @@
 
         // --- Document Data ---
         const documents = [
+            // NYE .MD-FILER FRA /docs
+            {
+                category: 'tech-docs',
+                title: 'Shofar Architecture v5.0',
+                description: 'The full hardware blueprint for the symbiotic AI accelerator, detailing its heterogeneous architecture and ethical security layer.',
+                url: 'docs/the_shofar_architecture_v5.md'
+            },
+            {
+                category: 'tech-docs',
+                title: 'M.E.S.S.I.A.H. Framework v5.0',
+                description: 'The operational framework for de-escalation and reconciliation, featuring a Dual-Track architecture and UN-anchored governance.',
+                url: 'docs/messiah_v5_en.md'
+            },
+            {
+                category: 'tech-docs',
+                title: 'E.L.I.A.H. Manifesto v4.0',
+                description: 'The complete manifesto and technical specification for the "Veto First, Fire Later" purely defensive security system.',
+                url: 'docs/eliah_manifesto_v4.md'
+            },
+            // EKSISTERENDE FILER
             // Philosophy
             {
                 category: 'philosophy',
