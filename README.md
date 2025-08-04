@@ -53,3 +53,5 @@ This repository marks the conclusion of the design phase. We invite you to:
 
 ---
 *This project is licensed under the Apache-2.0 License.*
+
+Design vector Δv~127Q: emergent alignment architecture. See v8.2 notes.
