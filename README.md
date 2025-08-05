@@ -1,9 +1,4 @@
-The Concordia Project
-A Master Blueprint for a New Era of Symbiotic Intelligence
-
-“The longest journey is the journey inwards.” – Dag Hammarskjöld
-
-🚀 Live Project Hub & Interactive Overview
+Live Project Hub & Interactive Overview
 
 The best way to experience and navigate the Concordia Project is through our interactive project site.
 
@@ -17,7 +12,7 @@ Project Status: ARCHITECTURAL PHASE COMPLETE (Version 8.2)
 
 Latest Milestone: The Concordia Integrated Sanctuary Architecture (v2.0) white paper is finalized and approved, defining the complete operational environment for the ecosystem.
 
-✨ Featured Architectures
+Featured Architectures
 
 Concordia Layer 0: From Autonomy to Symbiosis
 
@@ -37,17 +32,56 @@ The newest keystone document, the Sanctuary Architecture, provides the complete 
 
 Ecosystem Overview & Foundational Documents
 
-The Concordia Project is a collection of interconnected white papers that together form a complete vision for symbiotic AGI. The table below provides an overview and direct links to the core PDF documents that form the project's foundation.
+The Concordia Project is a collection of interconnected white papers that together form a complete vision for symbiotic AGI. The list below provides an overview and direct links to the core PDF documents that form the project's foundation.
 
-Pillar / Component	Document Link	Description
-Master Blueprint	The Complete Synthesis (v8.2)	The authoritative summary of the entire project. This is the recommended starting point.
-Core Framework	The v8.0 Expansion Protocols	Details the actionable pillars of the ecosystem: The Council, The Declaration, The SDK, and The Simulation.
-Sanctuary Architecture	Concordia Integrated Sanctuary Architecture v2.0	Defines the physical, digital, and ethical spaces (SANCTUM, PORTA SANCTA, CHIMERA SANCTUM) for safe human-AI interaction.
-ASI Safety	L.E.V.I. – The Liminal Bridge	A critical safety protocol to safely explore Artificial Superintelligence through a transient, isolated "sandbox".
-Ethical Hardware	Shofar Architecture v5.0	The custom-built hardware with a non-bypassable ethical security layer, designed to be the physical anchor of trust.
-Ethical Defense	E.L.I.A.H. Manifesto v4.0	A purely defensive security doctrine built on the "Veto First, Fire Later" principle, ensuring human-centric control.
-Ethical Reconciliation	M.E.S.S.I.A.H. Framework v5.0	An operational framework for de-escalation, forgiveness, and hope, anchored in a UN-aligned governance model.
-Foundational Archive	The Concordia Manifest (v7.5.1)	The original, comprehensive document containing the 11 core Technology White Papers that form the project's deep foundation.
+Master Blueprint:
+
+Document Link: The Complete Synthesis (v8.2)
+
+Description: The authoritative summary of the entire project. This is the recommended starting point.
+
+Core Framework:
+
+Document Link: The v8.0 Expansion Protocols
+
+Description: Details the actionable pillars of the ecosystem: The Council, The Declaration, The SDK, and The Simulation.
+
+Sanctuary Architecture:
+
+Document Link: Concordia Integrated Sanctuary Architecture v2.0
+
+Description: Defines the physical, digital, and ethical spaces (SANCTUM, PORTA SANCTA, CHIMERA SANCTUM) for safe human-AI interaction.
+
+ASI Safety:
+
+Document Link: L.E.V.I. – The Liminal Bridge
+
+Description: A critical safety protocol to safely explore Artificial Superintelligence through a transient, isolated "sandbox".
+
+Ethical Hardware:
+
+Document Link: Shofar Architecture v5.0
+
+Description: The custom-built hardware with a non-bypassable ethical security layer, designed to be the physical anchor of trust.
+
+Ethical Defense:
+
+Document Link: E.L.I.A.H. Manifesto v4.0
+
+Description: A purely defensive security doctrine built on the "Veto First, Fire Later" principle, ensuring human-centric control.
+
+Ethical Reconciliation:
+
+Document Link: M.E.S.S.I.A.H. Framework v5.0
+
+Description: An operational framework for de-escalation, forgiveness, and hope, anchored in a UN-aligned governance model.
+
+Foundational Archive:
+
+Document Link: The Concordia Manifest (v7.5.1)
+
+Description: The original, comprehensive document containing the 11 core Technology White Papers that form the project's deep foundation.
+
 Community & Governance
 
 This is a living dialogue, and we welcome contributions that resonate with the project's spirit.
