@@ -20,11 +20,25 @@ The best way to experience and navigate the Concordia Project is through our int
 
 This repository contains the complete, canonized documentation for **The Concordia Project**, a comprehensive framework for developing a new generation of artificial intelligence. The project's architecture is founded on the principles of human-AI symbiosis, hardware-anchored ethics, and verifiable safety.
 
-**Project Status:** `ARCHITECTURAL PHASE COMPLETE (Version 8.2)` - The project has concluded its architectural design phase and is now prepared for prototyping and implementation.
+**Project Status:** `ARCHITECTURAL PHASE COMPLETE (Version 8.2)`
+* **Latest Milestone:** The **Concordia Layer 0 (v4.0)** white paper is finalized and approved, marking a major new keystone in the ecosystem.
 
-### **Ecosystem Overview & Key Documents**
+---
 
-The Concordia Project is a collection of interconnected white papers that together form a complete vision for symbiotic AGI. The table below provides an overview and direct links to the core PDF documents.
+### ✨ Newest Keystone: Concordia Layer 0
+
+![Concordia Layer 0 Logo](concordia-layer-0.png)
+
+The most recently completed pillar of the Concordia ecosystem is **Layer 0**, a foundational white paper detailing an ethical and empathetic sensory layer designed to shift the paradigm **from autonomy to symbiosis**. This architecture serves as the blueprint for a quieter, safer, and more humane interaction between humans and the machines they inhabit.
+
+* **➡️ [Read the full White Paper (PDF)](concordia-layer-0.pdf)**
+* **➡️ [Browse the document in Markdown format](./docs/CONCORDIA_LAYER_0.md)**
+
+---
+
+### **Ecosystem Overview & Foundational Documents**
+
+The Concordia Project is a collection of interconnected white papers that together form a complete vision for symbiotic AGI. The table below provides an overview and direct links to the other core PDF documents that form the project's foundation.
 
 | Pillar / Component          | Document Link                                                                                                 | Description                                                                                                                   |
 | :-------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------- |
