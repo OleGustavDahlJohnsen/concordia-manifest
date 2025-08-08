@@ -45,6 +45,15 @@ The newest keystone document, the **Sanctuary Architecture**, provides the compl
 * ➡️ **[Read the full White Paper (PDF)](concordia-integrated-sanctuary-architecture-v2.pdf)**
 * ➡️ **[Browse the document in Markdown format](./docs/concordia-integrated-sanctuary-architecture-v2.md)**
 
+#### Shofar v2.0: The Distributed Nervous System
+
+![Shofar v2.0 Logo](./Shofar_v2.0_Concept/shofar-v2-logo.png)
+
+[cite_start]The crucial extension to the Shofar family, v2.0 transforms the original ethical core into a complete, distributed nervous system[cite: 12]. [cite_start]This modular architecture is designed to achieve **scaled ethics**, ensuring that every component in the symbiotic ecosystem operates with verifiable integrity[cite: 17].
+
+* ➡️ **[Read the full White Paper (PDF)](./Shofar_v2.0_Concept/shofar-v2.pdf)**
+* ➡️ **[Browse the system map](./Shofar_v2.0_Concept/shofar-v2-system-map.png)**
+
 ---
 
 ### **Ecosystem Overview & Foundational Documents**
@@ -60,6 +69,8 @@ The Concordia Project is a collection of interconnected white papers that togeth
 * **ASI Safety:** [`L.E.V.I. – The Liminal Bridge`](levi_the_liminal_bridge.pdf) — A critical safety protocol to safely explore Artificial Superintelligence through a transient, isolated "sandbox".
 
 * **Ethical Hardware:** [`Shofar Architecture v5.0`](the_shofar_architecture_v5.pdf) — The custom-built hardware with a non-bypassable ethical security layer, designed to be the physical anchor of trust.
+
+* [cite_start]**Hardware Extension:** [`Shofar Architecture v2.0`](./Shofar_v2.0_Concept/shofar-v2.pdf) — The modular extension that transforms the Shofar core into a distributed, scalable nervous system for the entire ecosystem[cite: 11, 13].
 
 * **Ethical Defense:** [`E.L.I.A.H. Manifesto v4.0`](manifesto_for_eliah_defense_system.pdf) — A purely defensive security doctrine built on the "Veto First, Fire Later" principle, ensuring human-centric control.
 
