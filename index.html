@@ -573,28 +573,45 @@
 
     </div>
 
-    <section style="text-align:center; margin: 3rem 0;">
-        <a href="https://olegustavdahljohnsen.github.io/project-agora/index.html" 
-           class="btn btn-primary agora-btn" target="_blank">
-            <img src="project-agora.png" alt="Project Agora Logo" 
-                 style="max-width:50px; height:auto; vertical-align:middle; margin-right:12px;">
-            Explore Project Agora – The Next Evolution
-        </a>
-    </section>
+    <!-- Sister Card for Project Agora (turquoise, identical to “fasit”) -->
+    <a href="https://olegustavdahljohnsen.github.io/project-agora/index.html"
+       target="_blank"
+       class="sister-card"
+       style="--accent-light:#20c997; --accent-dark:#66fcf1;">
+      <img src="project-agora.png" alt="Project Agora Logo">
+      <div class="sister-card-text">
+        <h4>Explore Project Agora – The Next Evolution</h4>
+        <p>Want to see the project that builds upon The Concordia Project? Click here to explore Project Agora and read more.</p>
+      </div>
+    </a>
 
     <style>
-        /* Overrides for Concordia to match Agora style */
-        .agora-btn {
-            background-color: var(--accent-light) !important;
-            color: #fff !important;
-            display: inline-flex;
-            align-items: center;
-            font-size: 1.1rem;
-        }
-        .dark-theme .agora-btn {
-            background-color: var(--accent-dark) !important;
-            color: var(--bg-dark) !important;
-        }
+    /* Full sister-card styles (ported to Concordia) */
+    .sister-card{
+      display:flex; align-items:center; gap:2rem;
+      border:1px solid; border-radius:12px; padding:1.5rem;
+      text-decoration:none; transition:transform .3s, box-shadow .3s;
+      color:inherit;
+    }
+    .light-theme .sister-card{ background-color:var(--card-bg-light); border-color:var(--border-light); box-shadow:var(--shadow); }
+    .dark-theme  .sister-card{ background-color:var(--card-bg-dark);  border-color:var(--border-dark); }
+
+    .sister-card:hover{ transform:translateY(-5px); }
+    .light-theme .sister-card:hover{ box-shadow:0 8px 15px rgba(0,0,0,.1); border-color:var(--accent-light); }
+    .dark-theme  .sister-card:hover{ border-color:var(--accent-dark); }
+
+    /* Typography & image */
+    .sister-card img{ max-width:100px; height:auto; border-radius:8px; }
+    .sister-card-text h4{ margin:0 0 .5rem 0; font-size:1.2rem; }
+    .light-theme .sister-card-text h4{ color:var(--accent-light); }
+    .dark-theme  .sister-card-text h4{ color:var(--accent-dark); }
+    .sister-card-text p{ margin:0; opacity:.8; }
+    .light-theme .sister-card-text p{ color:var(--text-light); }
+    .dark-theme  .sister-card-text p{ color:var(--text-dark); }
+
+    /* Extra turquoise glow in dark mode */
+    .dark-theme .sister-card{ box-shadow:0 0 15px rgba(102,252,241,.30); }
+    .dark-theme .sister-card:hover{ box-shadow:0 0 25px rgba(102,252,241,.60); }
     </style>
 
     <footer>
