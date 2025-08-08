@@ -20,8 +20,8 @@ The best way to experience and navigate the Concordia Project is through our int
 
 This repository contains the complete, canonized documentation for **The Concordia Project**, a comprehensive framework for developing a new generation of artificial intelligence. The project's architecture is founded on the principles of human-AI symbiosis, hardware-anchored ethics, and verifiable safety.
 
-**Project Status:** `ARCHITECTURAL PHASE COMPLETE (Version 8.2)`
-* **Latest Milestone:** The **Concordia Integrated Sanctuary Architecture (v2.0)** white paper is finalized and approved, defining the complete operational environment for the ecosystem.
+**Project Status:** `ARCHITECTURAL PHASE COMPLETE (Version 8.3)`
+* **Latest Milestone:** The **Shofar v2.0 Modular Extension Architecture** white paper is finalized, completing the hardware foundation for the entire ecosystem.
 
 ---
 
@@ -47,9 +47,9 @@ The newest keystone document, the **Sanctuary Architecture**, provides the compl
 
 #### Shofar v2.0: The Distributed Nervous System
 
-![Shofar v2.0 Logo](./Shofar_v2.0_Concept/shofar-v2-logo.png)
+![Shofar v2.0 Logo](https://raw.githubusercontent.com/OleGustavDahlJohnsen/concordia-manifest/main/Shofar_v2.0_Concept/shofar-v2-logo.png)
 
-[cite_start]The crucial extension to the Shofar family, v2.0 transforms the original ethical core into a complete, distributed nervous system[cite: 12]. [cite_start]This modular architecture is designed to achieve **scaled ethics**, ensuring that every component in the symbiotic ecosystem operates with verifiable integrity[cite: 17].
+The crucial extension to the Shofar family, v2.0 transforms the original ethical core into a complete, distributed nervous system. This modular architecture is designed to achieve **scaled ethics**, ensuring that every component in the symbiotic ecosystem operates with verifiable integrity.
 
 * ➡️ **[Read the full White Paper (PDF)](./Shofar_v2.0_Concept/shofar-v2.pdf)**
 * ➡️ **[Browse the system map](./Shofar_v2.0_Concept/shofar-v2-system-map.png)**
@@ -60,7 +60,7 @@ The newest keystone document, the **Sanctuary Architecture**, provides the compl
 
 The Concordia Project is a collection of interconnected white papers that together form a complete vision for symbiotic AGI. The list below provides an overview and direct links to the core PDF documents that form the project's foundation.
 
-* **Master Blueprint:** [`The Complete Synthesis (v8.2)`](the-concordia-project-v8.2–the-complete-synthesis.pdf) — The authoritative summary of the entire project. **This is the recommended starting point.**
+* **Master Blueprint:** [`The Complete Synthesis (v8.3)`](the-concordia-project-v8.2–the-complete-synthesis.pdf) — The authoritative summary of the entire project. **This is the recommended starting point.**
 
 * **Core Framework:** [`The v8.0 Expansion Protocols`](the-concordia-manifest-v8–expansion-protocols.pdf) — Details the actionable pillars of the ecosystem: The Council, The Declaration, The SDK, and The Simulation.
 
@@ -70,7 +70,7 @@ The Concordia Project is a collection of interconnected white papers that togeth
 
 * **Ethical Hardware:** [`Shofar Architecture v5.0`](the_shofar_architecture_v5.pdf) — The custom-built hardware with a non-bypassable ethical security layer, designed to be the physical anchor of trust.
 
-* [cite_start]**Hardware Extension:** [`Shofar Architecture v2.0`](./Shofar_v2.0_Concept/shofar-v2.pdf) — The modular extension that transforms the Shofar core into a distributed, scalable nervous system for the entire ecosystem[cite: 11, 13].
+* **Hardware Extension:** [`Shofar Architecture v2.0`](./Shofar_v2.0_Concept/shofar-v2.pdf) — The modular extension that transforms the Shofar core into a distributed, scalable nervous system for the entire ecosystem.
 
 * **Ethical Defense:** [`E.L.I.A.H. Manifesto v4.0`](manifesto_for_eliah_defense_system.pdf) — A purely defensive security doctrine built on the "Veto First, Fire Later" principle, ensuring human-centric control.
 
@@ -96,4 +96,4 @@ This repository marks the conclusion of the design phase. We invite you to:
 ---
 *This project is dual-licensed under the MIT License and the Apache 2.0 License. See the [LICENSE](LICENSE) file for full details.*
 
-Design vector Δv~127Q: emergent alignment architecture. See v8.2 notes.
+Design vector Δv~127Q: emergent alignment architecture. See v8.3 notes.
