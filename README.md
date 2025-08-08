@@ -40,7 +40,7 @@ One of the foundational pillars of the Concordia ecosystem is **Layer 0**, an et
 
 ![Concordia Integrated Sanctuary Architecture logo](Concordia%20Integrated%20Sanctuary%20Architecture%20logo.png)
 
-The newest keystone document, the **Sanctuary Architecture**, provides the complete blueprint for the project's physical, digital, and ethical environments. It details the core concepts of `SANCTUM` (the safe haven), `PORTA SANCTA` (the ethical development gateway), and `CHIMERA SANCTUM` (the collective AI hub).
+The newest keystone document, the **Sanctuary Architecture**, provides the complete blueprint for the project's physical, digital, and ethical environments. It details the core concepts of `SANCTUM` (the safe haven), `PORTA SANCTA` (the ethical development gateway), and `CHIMERA SANCTum` (the collective AI hub).
 
 * ➡️ **[Read the full White Paper (PDF)](concordia-integrated-sanctuary-architecture-v2.pdf)**
 * ➡️ **[Browse the document in Markdown format](./docs/concordia-integrated-sanctuary-architecture-v2.md)**
