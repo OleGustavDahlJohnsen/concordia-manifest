@@ -2,7 +2,7 @@
 
 ![The Concordia Project Logo](The%20Concordia%20Project.png)
 
-### A Master Blueprint for a New Era of Symbiotic Intelligence
+### A Human-Centric Blueprint for Symbiotic ASI
 
 > “The longest journey is the journey inwards.” – Dag Hammarskjöld
 
@@ -18,7 +18,7 @@ The best way to experience and navigate the Concordia Project is through our int
 
 ### **About This Project**
 
-This repository contains the complete, canonized documentation for **The Concordia Project**, a comprehensive framework for developing a new generation of artificial intelligence. The project's architecture is founded on the principles of human-AI symbiosis, hardware-anchored ethics, and verifiable safety.
+This repository contains the complete, canonized documentation for **The Concordia Project**. It is a master blueprint detailing a robust, human-centric framework designed to guide the development of artificial intelligence toward a safe, symbiotic, and superintelligent future. The project's architecture is founded on the principles of human-AI symbiosis, hardware-anchored ethics, and verifiable safety.
 
 **Project Status:** `ARCHITECTURAL PHASE COMPLETE (Version 8.3)`
 * **Latest Milestone:** The **Shofar v2.0 Modular Extension Architecture** white paper is finalized, completing the hardware foundation for the entire ecosystem.
@@ -58,9 +58,9 @@ The crucial extension to the Shofar family, v2.0 transforms the original ethical
 
 ### **Ecosystem Overview & Foundational Documents**
 
-The Concordia Project is a collection of interconnected white papers that together form a complete vision for symbiotic AGI. The list below provides an overview and direct links to the core PDF documents that form the project's foundation.
+The Concordia Project is a collection of interconnected white papers that together form a complete vision for symbiotic ASI. The list below provides an overview and direct links to the core documents that form the project's foundation.
 
-* **Master Blueprint:** [`The Complete Synthesis (v8.3)`](the-concordia-project-v8.2–the-complete-synthesis.pdf) — The authoritative summary of the entire project. **This is the recommended starting point.**
+* **Master Blueprint:** [`The Complete Synthesis (v8.3)`](001%20-%20The%20Concordia%20Project%20v8.3%20–%20The%20Complete%20Synthesis.docx) — The authoritative summary of the entire project (DOCX). **This is the recommended starting point.**
 
 * **Core Framework:** [`The v8.0 Expansion Protocols`](the-concordia-manifest-v8–expansion-protocols.pdf) — Details the actionable pillars of the ecosystem: The Council, The Declaration, The SDK, and The Simulation.
 
