@@ -33,6 +33,10 @@
             margin: 0;
             padding: 0;
             transition: background-color 0.3s, color 0.3s;
+            background-image: url('background-blue.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         .light-theme {
@@ -371,7 +375,7 @@
 
     </style>
 </head>
-<body>
+<body class="dark-theme">
 
     <header>
         <div class="title-version">
@@ -584,16 +588,30 @@
 
     </div>
 
-    <a href="https://olegustavdahljohnsen.github.io/project-agora/index.html"
-       target="_blank"
-       class="sister-card"
-       style="--accent-light:#20c997; --accent-dark:#66fcf1;">
-      <img src="project-agora.png" alt="Project Agora Logo">
-      <div class="sister-card-text">
-        <h4>Explore Project Agora – The Next Evolution</h4>
-        <p>Want to see the project that builds upon The Concordia Project? Click here to explore Project Agora and read more.</p>
-      </div>
-    </a>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+        <a href="https://olegustavdahljohnsen.github.io/project-agora/index.html"
+            target="_blank"
+            class="sister-card"
+            style="--accent-light:#20c997; --accent-dark:#66fcf1;">
+            <img src="project-agora.png" alt="Project Agora Logo">
+            <div class="sister-card-text">
+                <h4>Explore Project Agora – The Next Evolution</h4>
+                <p>Want to see the project that builds upon The Concordia Project? Click here to explore Project Agora and read more.</p>
+            </div>
+        </a>
+
+        <a href="https://olegustavdahljohnsen.github.io/project-agora/enterprise-shofar-ultra/index.html"
+            target="_blank"
+            class="sister-card"
+            style="--accent-light:#ffbf00; --accent-dark:#ffbf00; margin-top: 1.5rem;">
+            <img src="enterprise-shofar-edition-ultra-3.png" alt="Enterprise Shofar Ultra Hardware" style="max-width: 100px; height: auto; border-radius: 8px;">
+            <div class="sister-card-text">
+                <h4>Behold the Engine: The Shofar Hardware Platform</h4>
+                <p>Curious about the ethical silicon powering this vision? Visit the home of Obsidian Wolf Systems to see the machine we build.</p>
+            </div>
+            <img src="obsidian-wolf.png" alt="Obsidian Wolf Systems Logo" style="max-width: 80px; height: auto; border-radius: 8px; margin-left: auto;">
+        </a>
+    </div>
 
     <style>
     /* Full sister-card styles (ported to Concordia) */
@@ -620,12 +638,16 @@
     .dark-theme  .sister-card-text p{ color:var(--text-dark); }
 
     /* Extra turquoise glow in dark mode */
-    .dark-theme .sister-card{ box-shadow:0 0 15px rgba(102,252,241,.30); }
-    .dark-theme .sister-card:hover{ box-shadow:0 0 25px rgba(102,252,241,.60); }
+    .dark-theme .sister-card[style*="--accent-dark:#66fcf1;"] { box-shadow:0 0 15px rgba(102,252,241,.30); }
+    .dark-theme .sister-card[style*="--accent-dark:#66fcf1;"]:hover { box-shadow:0 0 25px rgba(102,252,241,.60); }
+    
+    /* Extra amber glow in dark mode */
+    .dark-theme .sister-card[style*="--accent-dark:#ffbf00;"] { box-shadow:0 0 15px rgba(255,191,0,.30); }
+    .dark-theme .sister-card[style*="--accent-dark:#ffbf00;"]:hover { box-shadow:0 0 25px rgba(255,191,0,.60); }
     </style>
 
     <footer>
-        <p>&copy; 2025 Ole Gustav Dahl Johnsen & The Concordia AI Council. Licensed under Apache-2.0. | Date: August 9, 2025</p>
+        <p>&copy; 2025 Ole Gustav Dahl Johnsen & The Concordia AI Council. Licensed under Apache-2.0. | Date: August 10, 2025</p>
     </footer>
 
     <script>
